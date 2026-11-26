@@ -9,7 +9,7 @@
   <!-- Google Fonts: Hind Siliguri (শিরোনামের জন্য) এবং Noto Sans Bengali (বডি টেক্সটের জন্য) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -58,19 +58,19 @@
   <header class="sticky top-0 z-40 bg-honey-50/95 backdrop-blur-md border-b border-honey-200/80 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-20">
-        <!-- ব্র্যান্ড লোগো ও নাম -->
+        <!-- ব্র্যান্ড লোগো ও নাম (Honey Drop SVG Logo) -->
         <a href="#" class="flex items-center gap-2.5 group focus:outline-none">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-honey-500 to-honey-600 flex items-center justify-center shadow-md shadow-honey-500/20 group-hover:scale-105 transition-transform">
-            <!-- কাস্টম মৌচাক (Honeycomb) SVG আইকন -->
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-honey-500 to-honey-600 flex items-center justify-center shadow-md shadow-honey-500/25 group-hover:scale-105 transition-transform">
+            <!-- মধুর ফোঁটা (Honey Drop) SVG আইকন -->
             <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2L16.5 4.6V9.8L12 12.4L7.5 9.8V4.6L12 2ZM17.5 10.6L22 13.2V18.4L17.5 21L13 18.4V13.2L17.5 10.6ZM6.5 10.6L11 13.2V18.4L6.5 21L2 18.4V13.2L6.5 10.6Z" />
+              <path d="M12 2.25C12 2.25 5.25 9.65 5.25 14.5C5.25 18.23 8.27 21.25 12 21.25C15.73 21.25 18.75 18.23 18.75 14.5C18.75 9.65 12 2.25 12 2.25ZM9.75 16.25C8.95 15.45 8.65 14.2 8.95 13.05C9.1 12.5 9.65 12.2 10.2 12.35C10.75 12.5 11.05 13.05 10.9 13.6C10.75 14.15 10.9 14.75 11.3 15.15C11.7 15.55 11.7 16.2 11.3 16.6C10.9 17 10.15 16.65 9.75 16.25Z" />
             </svg>
           </div>
           <div>
             <span class="font-heading font-bold text-xl sm:text-2xl text-espresso tracking-tight block leading-none">
               মধুবন <span class="text-honey-600">অর্গানিকস</span>
             </span>
-            <span class="text-[11px] sm:text-xs text-espresso-muted font-medium">সুন্দরবনের খাঁটি চাকের মধু</span>
+            <span class="text-[11px] sm:text-xs text-espresso-muted font-medium">সুন্দরবনের ১০০% খাঁটি চাকের মধু</span>
           </div>
         </a>
 
@@ -78,14 +78,14 @@
         <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm lg:text-base font-medium text-espresso-light">
           <a href="#benefits" class="hover:text-honey-600 transition-colors">উপকারিতা</a>
           <a href="#purity" class="hover:text-honey-600 transition-colors">খাঁটি চেনার উপায়</a>
-          <a href="#packages" class="hover:text-honey-600 transition-colors">প্যাকেজ</a>
+          <a href="#packages" class="hover:text-honey-600 transition-colors">প্যাকেজ ও দাম</a>
           <a href="#reviews" class="hover:text-honey-600 transition-colors">রিভিউ</a>
           <a href="#faq" class="hover:text-honey-600 transition-colors">FAQ</a>
         </nav>
 
-        <!-- নেভবার CTA বাটন ও মোবাইল মেনু বাটন -->
+        <!-- নেভবার গোল্ডেন CTA বাটন ও মোবাইল মেনু বাটন -->
         <div class="flex items-center gap-2 sm:gap-3">
-          <a href="#order" class="inline-flex items-center justify-center gap-1.5 bg-gradient-to-r from-honey-600 to-honey-500 hover:from-honey-700 hover:to-honey-600 text-white font-heading font-semibold text-sm sm:text-base px-4 sm:px-5 py-2.5 rounded-xl shadow-md shadow-honey-600/25 hover:shadow-lg transition-all active:scale-95">
+          <a href="#order-section" class="inline-flex items-center justify-center gap-1.5 bg-gradient-to-r from-honey-600 to-honey-500 hover:from-honey-700 hover:to-honey-600 text-white font-heading font-bold text-sm sm:text-base px-4 sm:px-5 py-2.5 rounded-xl shadow-md shadow-honey-600/25 hover:shadow-lg transition-all active:scale-95">
             <span>অর্ডার করুন</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -109,48 +109,48 @@
         <a href="#benefits" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-espresso hover:bg-honey-100">উপকারিতা</a>
         <a href="#purity" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-espresso hover:bg-honey-100">খাঁটি চেনার উপায়</a>
         <a href="#packages" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-espresso hover:bg-honey-100">প্যাকেজ ও দাম</a>
-        <a href="#reviews" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-espresso hover:bg-honey-100">কাস্টমার রিভিউ</a>
-        <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-espresso hover:bg-honey-100">সচরাচর জিজ্ঞাসিত প্রশ্ন (FAQ)</a>
+        <a href="#reviews" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-espresso hover:bg-honey-100">রিভিউ</a>
+        <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-espresso hover:bg-honey-100">FAQ</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- ==================== ২. হিরো সেকশন (Hero Section) ==================== -->
-    <section class="relative pt-8 pb-14 sm:pt-14 sm:pb-20 bg-gradient-to-b from-honey-100/70 via-honey-50 to-honey-50 overflow-hidden">
-      <!-- ব্যাকগ্রাউন্ড ডেকোরেটিভ ব্লার সার্কেল -->
-      <div class="absolute -top-24 -right-24 w-72 h-72 sm:w-96 sm:h-96 bg-honey-300/30 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute top-1/2 -left-24 w-64 h-64 bg-honey-200/40 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- ==================== ২. হিরো সেকশন (Hero Section with honey.jpg) ==================== -->
+    <section class="relative pt-8 pb-16 sm:pt-14 sm:pb-20 bg-gradient-to-b from-amber-100/70 via-honey-50 to-honey-50 overflow-hidden">
+      <!-- ব্যাকগ্রাউন্ড ডেকোরেটিভ ব্লার -->
+      <div class="absolute -top-24 -right-24 w-72 h-72 sm:w-96 sm:h-96 bg-amber-300/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 -left-24 w-64 h-64 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
-          <!-- বাম পাশ: হেডলাইন ও কল-টু-অ্যাকশন -->
-          <div class="lg:col-span-7 text-center lg:text-left space-y-6">
-            <!-- টপ ট্রাস্ট ব্যাজ -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-trust-light border border-trust/20 text-trust-dark text-xs sm:text-sm font-semibold shadow-sm">
-              <span>🌿 ১০০% প্রাকৃতিক ও ল্যাব টেস্টেড | সারা দেশে ক্যাশ অন ডেলিভারি</span>
+          <!-- বাম কলাম: হেডলাইন, ভ্যালু প্রপোজিশন ও কল-টু-অ্যাকশন -->
+          <div class="lg:col-span-6 text-center lg:text-left space-y-6">
+            <!-- টপ ট্রাস্ট পিল ব্যাজ -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-trust-light border border-trust/25 text-trust-dark text-xs sm:text-sm font-semibold shadow-sm">
+              <span>🌿 ১০০% প্রাকৃতিক ও ল্যাব টেস্টেড | সুন্দরবনের খলিশা ও গরান ফুলের মধু</span>
             </div>
 
-            <!-- প্রধান হেডলাইন -->
-            <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] text-espresso leading-[1.25] tracking-tight">
-              প্রকৃতির আসল স্বাদ: সুন্দরবনের গভীর অরণ্য থেকে সংগৃহীত <span class="text-honey-600 underline decoration-honey-300 decoration-4 underline-offset-4">১০০% খাঁটি চাকের মধু</span>
+            <!-- প্রধান H1 হেডলাইন -->
+            <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] text-espresso leading-[1.22] tracking-tight">
+              সুন্দরবনের গভীর অরণ্য থেকে সংগৃহীত <span class="text-honey-600 underline decoration-amber-300 decoration-4 underline-offset-4">১০০% খাঁটি চাকের মধু</span>
             </h1>
 
-            <!-- সাব-হেডলাইন -->
+            <!-- সংক্ষিপ্ত ভ্যালু প্রপোজিশন -->
             <p class="text-base sm:text-lg text-espresso-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              কোনো চিনি, কেমিক্যাল বা প্রসেসিং ছাড়াই সরাসরি মৌয়ালদের মাধ্যমে সংগৃহীত অপরিশোধিত (Raw) প্রাকৃতিক মধু। এক ফোঁটাতেই পাবেন আসল ঘ্রাণ ও রোগ প্রতিরোধের শক্তি।
+              কোনো প্রকার তাপ, চিনি বা কৃত্রিম প্রসেসিং ছাড়াই সরাসরি সুন্দরবনের অভিজ্ঞ মৌয়ালদের মাধ্যমে সংগৃহীত অপরিশোধিত (Raw) প্রাকৃতিক চাকের মধু। এক ফোঁটাতেই পাবেন বুনো ফুলের আসল ঘ্রাণ ও রোগ প্রতিরোধের প্রাকৃতিক শক্তি।
             </p>
 
-            <!-- অ্যাকশন বাটনসমূহ -->
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
-              <a href="#order" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-honey-600 to-honey-500 hover:from-honey-700 hover:to-honey-600 text-white font-heading font-bold text-lg px-7 py-4 rounded-2xl shadow-lg shadow-honey-600/30 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+            <!-- প্রাইমারি ও সেকেন্ডারি বাটন -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-1">
+              <a href="#order-section" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-honey-600 to-honey-500 hover:from-honey-700 hover:to-honey-600 text-white font-heading font-bold text-lg px-7 py-4 rounded-2xl shadow-lg shadow-honey-600/30 hover:shadow-xl hover:-translate-y-0.5 transition-all">
                 <span>এখনই অর্ডার করুন</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              <a href="#purity" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-honey-100/80 text-espresso font-heading font-semibold text-base sm:text-lg px-6 py-4 rounded-2xl border-2 border-honey-300 transition-all">
+              <a href="#purity" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-amber-50 text-espresso font-heading font-semibold text-base sm:text-lg px-6 py-4 rounded-2xl border-2 border-amber-300 transition-all">
                 <svg class="w-5 h-5 text-honey-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -158,81 +158,55 @@
               </a>
             </div>
 
-            <!-- কুইক ট্রাস্ট হাইলাইট -->
-            <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-xs sm:text-sm text-espresso-muted font-medium">
-              <span class="flex items-center gap-1.5">
-                <svg class="w-4 h-4 text-trust" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                অগ্রিম ১ টাকাও দিতে হবে না
-              </span>
-              <span class="flex items-center gap-1.5">
-                <svg class="w-4 h-4 text-trust" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                চেক করে মূল্য পরিশোধের সুবিধা
-              </span>
-              <span class="flex items-center gap-1.5">
-                <svg class="w-4 h-4 text-honey-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                ৪.৯/৫ কাস্টমার রেটিং (১,২০০+ পরিবার)
-              </span>
+            <!-- ৩টি মাইক্রো-ট্রাস্ট ব্যাজ -->
+            <div class="pt-3 grid grid-cols-3 gap-2 sm:gap-3 max-w-lg mx-auto lg:mx-0">
+              <div class="bg-white/90 border border-amber-200 rounded-xl px-2.5 py-2.5 text-center shadow-sm">
+                <span class="block text-trust font-bold text-xs sm:text-sm">✓ ক্যাশ অন ডেলিভারি</span>
+              </div>
+              <div class="bg-white/90 border border-amber-200 rounded-xl px-2.5 py-2.5 text-center shadow-sm">
+                <span class="block text-honey-700 font-bold text-xs sm:text-sm">🚚 ১ কেজিতে ফ্রি ডেলিভারি</span>
+              </div>
+              <div class="bg-white/90 border border-amber-200 rounded-xl px-2.5 py-2.5 text-center shadow-sm">
+                <span class="block text-trust font-bold text-xs sm:text-sm">🛡️ ৭ দিনের রিটার্ন গ্যারান্টি</span>
+              </div>
             </div>
           </div>
 
-          <!-- ডান পাশ: প্রোডাক্টের বড় ছবি ও ফ্লোটিং ব্যাজ -->
-          <div class="lg:col-span-5 relative max-w-md mx-auto w-full">
-            <div class="relative rounded-3xl p-3 bg-gradient-to-br from-honey-300 via-honey-200 to-amber-100 shadow-2xl shadow-honey-900/15">
-              <div class="relative rounded-2xl overflow-hidden bg-honey-100 aspect-[4/4] flex items-center justify-center">
-                <!-- আপনার প্রোডাক্টের ছবি পরিবর্তন করতে চাইলে এখানে local image path যেমন honey.jpg দিন -->
-                <img
-                  id="heroHoneyImg"
-                  src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80"
-                  alt="সুন্দরবনের ১০০% খাঁটি চাকের মধু - মধুবন অর্গানিকস"
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  onerror="this.classList.add('hidden'); document.getElementById('heroSvgFallback').classList.remove('hidden');"
-                />
-
-                <!-- ছবি লোড না হলে স্টাইলাইজড গোল্ডেন SVG মধুর জার কার্ড দেখাবে -->
-                <div id="heroSvgFallback" class="hidden w-full h-full bg-gradient-to-br from-amber-100 via-honey-200 to-honey-300 flex flex-col items-center justify-center p-6 text-center">
-                  <svg class="w-40 h-40 drop-shadow-lg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="58" y="24" width="84" height="22" rx="8" fill="#78350F" />
-                    <rect x="64" y="44" width="72" height="10" rx="3" fill="#B45309" />
-                    <path d="M48 64C48 56.268 54.268 50 62 50H138C145.732 50 152 56.268 152 64V156C152 169.255 141.255 180 128 180H72C58.7452 180 48 169.255 48 156V64Z" fill="url(#honeyGrad)" stroke="#B45309" stroke-width="4" />
-                    <path d="M52 92C72 102 90 84 112 94C130 102 140 90 148 92V156C148 167.046 139.046 176 128 176H72C60.9543 176 52 167.046 52 156V92Z" fill="#D97706" fill-opacity="0.45" />
-                    <rect x="64" y="106" width="72" height="44" rx="10" fill="#FFFDF7" stroke="#F59E0B" stroke-width="2" />
-                    <text x="100" y="126" text-anchor="middle" fill="#291D0E" font-size="13" font-weight="bold">মধুবন অর্গানিকস</text>
-                    <text x="100" y="142" text-anchor="middle" fill="#B45309" font-size="10" font-weight="bold">১০০% খাঁটি চাকের মধু</text>
-                    <defs>
-                      <linearGradient id="honeyGrad" x1="100" y1="50" x2="100" y2="180" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FBBF24" />
-                        <stop offset="0.5" stop-color="#F59E0B" />
-                        <stop offset="1" stop-color="#B45309" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <p class="font-heading font-bold text-lg text-espresso mt-2">সুন্দরবনের প্রাকৃতিক চাকের মধু</p>
-                </div>
-              </div>
+          <!-- ডান কলাম: প্রোডাক্ট ইমেজ শোকেস (honey.jpg) -->
+          <div class="lg:col-span-6 relative max-w-xl mx-auto w-full">
+            <div class="relative p-2 sm:p-3 rounded-3xl bg-gradient-to-br from-amber-200/80 via-amber-100 to-honey-200/70 shadow-xl">
+              <!-- আপনার তৈরি করা মধুর ছবি (honey.jpg) -->
+              <img
+                id="hero-product-img"
+                src="honey.jpg"
+                alt="মধুবন অর্গানিকস - সুন্দরবনের ১০০% খাঁটি চাকের মধু"
+                class="w-full aspect-[4/3] object-cover rounded-2xl shadow-2xl border-4 border-amber-200"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1000&q=80';"
+              />
 
               <!-- ফ্লোটিং ব্যাজ ১ (উপরে বামে) -->
-              <div class="absolute -top-4 -left-2 sm:-left-5 bg-white/95 backdrop-blur px-3.5 py-2.5 rounded-2xl shadow-lg border border-honey-200 flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-xl bg-trust-light text-trust flex items-center justify-center shrink-0">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              <div class="absolute -top-4 left-2 sm:-left-4 bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl shadow-lg border border-amber-200 flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-xl bg-amber-100 text-honey-600 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 </div>
                 <div>
-                  <p class="font-heading font-bold text-xs sm:text-sm text-espresso leading-tight">০% চিনি ও প্রিজারভেটিভ</p>
-                  <p class="text-[11px] text-espresso-muted">সম্পূর্ণ অপরিশোধিত (Raw)</p>
+                  <p class="font-heading font-bold text-xs sm:text-sm text-espresso leading-tight">১০০% খাঁটি চাকের মধু</p>
+                  <p class="text-[11px] text-espresso-muted">সরাসরি মৌয়ালদের সংগৃহীত</p>
                 </div>
               </div>
 
               <!-- ফ্লোটিং ব্যাজ ২ (নিচে ডানে) -->
-              <div class="absolute -bottom-4 -right-2 sm:-right-5 bg-espresso text-white px-4 py-2.5 rounded-2xl shadow-xl border border-honey-500/40 flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-xl bg-honey-500/20 text-honey-400 flex items-center justify-center shrink-0">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+              <div class="absolute -bottom-4 right-2 sm:-right-4 bg-espresso text-white px-4 py-2.5 rounded-2xl shadow-xl border border-amber-400/40 flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-xl bg-trust text-white flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <p class="font-heading font-bold text-xs sm:text-sm text-honey-300 leading-tight">সরাসরি মৌয়াল থেকে সংগৃহীত</p>
-                  <p class="text-[11px] text-honey-100/80">সাতক্ষীরা ও খুলনা রেঞ্জ, সুন্দরবন</p>
+                  <p class="font-heading font-bold text-xs sm:text-sm text-amber-300 leading-tight">কোনো চিনি বা প্রিজারভেটিভ নেই</p>
+                  <p class="text-[11px] text-amber-100/80">সম্পূর্ণ অপরিশোধিত (Raw Honey)</p>
                 </div>
               </div>
             </div>
@@ -242,93 +216,25 @@
       </div>
     </section>
 
-    <!-- ==================== ৩. উৎস ও সংগ্রহ প্রক্রিয়া (Product Origin & Story) ==================== -->
-    <section class="py-14 sm:py-20 bg-white border-y border-honey-200/70">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="inline-block px-3 py-1 rounded-full bg-honey-100 text-honey-800 text-xs sm:text-sm font-semibold mb-2">
-            আমাদের সংগ্রহের গল্প
-          </span>
-          <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-espresso">
-            সুন্দরবনের গভীর অরণ্য থেকে কীভাবে আপনার হাতে পৌঁছায়?
-          </h2>
-          <p class="text-espresso-muted text-sm sm:text-base mt-2.5">
-            প্রতিটি ফোঁটায় প্রকৃতির বিশুদ্ধতা ধরে রাখতে আমরা মেনে চলি ৩টি সহজ ও স্বচ্ছ ধাপ
-          </p>
-        </div>
-
-        <!-- ৩ ধাপের ভিজ্যুয়াল ফ্লো -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 relative">
-          <!-- ধাপ ১ -->
-          <div class="relative bg-honey-50 rounded-3xl p-6 sm:p-7 border border-honey-200 hover:border-honey-400 hover:shadow-lg transition-all">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-2xl bg-honey-500 text-white flex items-center justify-center font-heading font-bold text-xl shadow-md">
-                ১
-              </div>
-              <span class="text-xs font-semibold uppercase tracking-wider text-honey-700 bg-honey-100 px-3 py-1 rounded-full">প্রাকৃতিক উৎস</span>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-espresso mb-2">
-              সুন্দরবনের খলিশা ও গরান ফুল থেকে সংগ্রহ
-            </h3>
-            <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              মধু আহরণের মৌসুমে অভিজ্ঞ মৌয়ালরা সুন্দরবনের গভীর জঙ্গলে প্রাকৃতিকভাবে গড়ে ওঠা মৌচাক কেটে খলিশা, গরান ও কেওড়া ফুলের খাঁটি মধু সংগ্রহ করেন।
-            </p>
-          </div>
-
-          <!-- ধাপ ২ -->
-          <div class="relative bg-honey-50 rounded-3xl p-6 sm:p-7 border border-honey-200 hover:border-honey-400 hover:shadow-lg transition-all">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-2xl bg-honey-600 text-white flex items-center justify-center font-heading font-bold text-xl shadow-md">
-                ২
-              </div>
-              <span class="text-xs font-semibold uppercase tracking-wider text-honey-700 bg-honey-100 px-3 py-1 rounded-full">১০০% অপরিশোধিত</span>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-espresso mb-2">
-              কোনো তাপ বা প্রসেসিং ছাড়াই ছাঁকন
-            </h3>
-            <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              মেশিনে তাপ দিলে মধুর প্রাকৃতিক এনজাইম ও অ্যান্টি-অক্সিডেন্ট নষ্ট হয়ে যায়। তাই আমরা সম্পূর্ণ প্রাকৃতিক উপায়ে পরিষ্কার কাপড়ে ছেঁকে মধু সংরক্ষণ করি।
-            </p>
-          </div>
-
-          <!-- ধাপ ৩ -->
-          <div class="relative bg-honey-50 rounded-3xl p-6 sm:p-7 border border-honey-200 hover:border-honey-400 hover:shadow-lg transition-all">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-2xl bg-trust text-white flex items-center justify-center font-heading font-bold text-xl shadow-md">
-                ৩
-              </div>
-              <span class="text-xs font-semibold uppercase tracking-wider text-trust-dark bg-trust-light px-3 py-1 rounded-full">নিরাপদ প্যাকেজিং</span>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-espresso mb-2">
-              ফুড-গ্রেড জারে সরাসরি আপনার দরজায়
-            </h3>
-            <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              স্বাস্থ্যসম্মত ফুড-গ্রেড এয়ারটাইট জারে সিল করে নিজস্ব কুরিয়ার নেটওয়ার্কের মাধ্যমে সারা বাংলাদেশের যেকোনো প্রান্তে পৌঁছে দিই।
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== ৪. উপকারিতা ও কারা খাবেন (Benefits & Target Audience) ==================== -->
-    <section id="benefits" class="py-14 sm:py-20 bg-honey-50">
+    <!-- ==================== ৩. উপকারিতা সেকশন (Benefits Section) ==================== -->
+    <section id="benefits" class="py-14 sm:py-20 bg-white border-y border-honey-200/70">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="inline-block px-3 py-1 rounded-full bg-honey-100 text-honey-800 text-xs sm:text-sm font-semibold mb-2">
-            স্বাস্থ্য ও পুষ্টিগুণ
+            প্রাকৃতিক পুষ্টি ও স্বাস্থ্যগুণ
           </span>
           <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-espresso">
-            কেন প্রতিদিন ১ চামচ খাঁটি মধু আপনার পরিবারের জন্য অপরিহার্য?
+            কেন প্রতিদিন মধুবন খাঁটি মধু খাবেন?
           </h2>
-          <p class="text-espresso-muted text-sm sm:text-base mt-3">
-            শিশু থেকে বৃদ্ধ, কর্মব্যস্ত পেশাজীবী কিংবা স্বাস্থ্যসচেতন যে কেউ প্রতিদিন সকালে বা রাতে খাঁটি মধু সেবন করতে পারেন
+          <p class="text-espresso-muted text-sm sm:text-base mt-2.5">
+            শিশু থেকে বৃদ্ধ—পুরো পরিবারের সুস্থতা ও রোগ প্রতিরোধ ক্ষমতা বাড়াতে প্রতিদিন ১ চামচ খাঁটি মধুই যথেষ্ট
           </p>
         </div>
 
         <!-- ৬টি উপকারিতা কার্ড -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- কার্ড ১ -->
-          <div class="bg-white rounded-3xl p-6 border border-honey-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <!-- কার্ড ১: রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি -->
+          <div class="bg-honey-50/70 rounded-3xl p-6 border border-honey-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
             <div class="w-12 h-12 rounded-2xl bg-honey-100 text-honey-600 flex items-center justify-center mb-4">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -336,87 +242,87 @@
             </div>
             <h3 class="font-heading font-bold text-xl text-espresso mb-2">রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি</h3>
             <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              প্রাকৃতিক অ্যান্টি-অক্সিডেন্ট ও অ্যান্টি-ব্যাকটেরিয়াল গুণাগুণ শরীরের ইমিউন সিস্টেমকে শক্তিশালী করে মৌসুমি রোগবালাই দূরে রাখে।
+              প্রাকৃতিক এনজাইম ও অ্যান্টি-ব্যাকটেরিয়াল গুণাগুণ শরীরের ইমিউন সিস্টেমকে মজবুত করে মৌসুমি সংক্রমণ ও রোগবালাই দূরে রাখে।
             </p>
           </div>
 
-          <!-- কার্ড ২ -->
-          <div class="bg-white rounded-3xl p-6 border border-honey-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <!-- কার্ড ২: সর্দি-কাশি ও গলা ব্যথা উপশম -->
+          <div class="bg-honey-50/70 rounded-3xl p-6 border border-honey-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
             <div class="w-12 h-12 rounded-2xl bg-honey-100 text-honey-600 flex items-center justify-center mb-4">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
             </div>
             <h3 class="font-heading font-bold text-xl text-espresso mb-2">সর্দি-কাশি ও গলা ব্যথা উপশম</h3>
             <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              তুলসী পাতা বা আদার রসের সাথে এক চামচ খাঁটি মধু খুসখুসে কাশি, কফ এবং ঠান্ডাজনিত গলা ব্যথা দ্রুত উপশম করতে দারুণ কার্যকর।
+              আদার রস বা তুলসী পাতার সাথে এক চামচ খাঁটি মধু খুসখুসে কাশি, কফ এবং ঠান্ডাজনিত গলা ব্যথা দ্রুত উপশম করতে দারুণ কার্যকর।
             </p>
           </div>
 
-          <!-- কার্ড ৩ -->
-          <div class="bg-white rounded-3xl p-6 border border-honey-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
-            <div class="w-12 h-12 rounded-2xl bg-honey-100 text-honey-600 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-espresso mb-2">হজমশক্তি ও গ্যাস্ট্রিক নিয়ন্ত্রণ</h3>
-            <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              সকালে খালি পেটে হালকা কুসুম গরম পানির সাথে মধু পান করলে বদহজম, কোষ্ঠকাঠিন্য ও অ্যাসিডিটির সমস্যা প্রাকৃতিকভাবে কমে আসে।
-            </p>
-          </div>
-
-          <!-- কার্ড ৪ -->
-          <div class="bg-white rounded-3xl p-6 border border-honey-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <!-- কার্ড ৩: তাৎক্ষণিক প্রাকৃতিক শক্তি -->
+          <div class="bg-honey-50/70 rounded-3xl p-6 border border-honey-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
             <div class="w-12 h-12 rounded-2xl bg-honey-100 text-honey-600 flex items-center justify-center mb-4">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h3 class="font-heading font-bold text-xl text-espresso mb-2">শিশু ও বড়দের প্রাকৃতিক এনার্জি</h3>
+            <h3 class="font-heading font-bold text-xl text-espresso mb-2">তাৎক্ষণিক প্রাকৃতিক শক্তি</h3>
             <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              পরিশোধিত সাদা চিনির বদলে প্রাকৃতিক গ্লুকোজ ও ফ্রুক্টোজ সমৃদ্ধ মধু শিশুদের মেধা বিকাশ ও বড়দের সারাদিনের ক্লান্তি দূর করে।
+              ক্ষতিকর সাদা চিনির বদলে প্রাকৃতিক গ্লুকোজ ও ফ্রুক্টোজ সমৃদ্ধ মধু শিশুদের মেধা বিকাশ ও বড়দের সারাদিনের ক্লান্তি দূর করে।
             </p>
           </div>
 
-          <!-- কার্ড ৫ -->
-          <div class="bg-white rounded-3xl p-6 border border-honey-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <!-- কার্ড ৪: হজমশক্তি ও হৃদযন্ত্রের সুরক্ষা -->
+          <div class="bg-honey-50/70 rounded-3xl p-6 border border-honey-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+            <div class="w-12 h-12 rounded-2xl bg-honey-100 text-honey-600 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-espresso mb-2">হজমশক্তি ও হৃদযন্ত্রের সুরক্ষা</h3>
+            <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
+              নিয়মিত খাঁটি মধু সেবনে অ্যাসিডিটি ও কোষ্ঠকাঠিন্য দূর হয় এবং রক্তের ক্ষতিকর কোলেস্টেরল কমিয়ে হৃদযন্ত্র সুস্থ রাখতে সাহায্য করে।
+            </p>
+          </div>
+
+          <!-- কার্ড ৫: ত্বকের উজ্জ্বলতা ও অ্যান্টি-অক্সিডেন্ট -->
+          <div class="bg-honey-50/70 rounded-3xl p-6 border border-honey-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
             <div class="w-12 h-12 rounded-2xl bg-honey-100 text-honey-600 flex items-center justify-center mb-4">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
               </svg>
             </div>
-            <h3 class="font-heading font-bold text-xl text-espresso mb-2">ত্বক ও চুলের যত্ন</h3>
+            <h3 class="font-heading font-bold text-xl text-espresso mb-2">ত্বকের উজ্জ্বলতা ও অ্যান্টি-অক্সিডেন্ট</h3>
             <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              প্রাকৃতিক ময়েশ্চারাইজার হিসেবে খাঁটি মধু ত্বকের উজ্জ্বলতা বাড়ায়, ব্রণ কমায় এবং রুক্ষ চুলকে ভেতর থেকে পুষ্টি জোগায়।
+              প্রচুর অ্যান্টি-অক্সিডেন্ট থাকায় এটি ভেতর থেকে তারুণ্য ধরে রাখে এবং প্রাকৃতিক ময়েশ্চারাইজার হিসেবে ত্বকের উজ্জ্বলতা বাড়ায়।
             </p>
           </div>
 
-          <!-- কার্ড ৬ -->
-          <div class="bg-white rounded-3xl p-6 border border-honey-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <!-- কার্ড ৬: ওজন নিয়ন্ত্রণে সহায়ক -->
+          <div class="bg-honey-50/70 rounded-3xl p-6 border border-honey-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
             <div class="w-12 h-12 rounded-2xl bg-honey-100 text-honey-600 flex items-center justify-center mb-4">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 class="font-heading font-bold text-xl text-espresso mb-2">ওজন নিয়ন্ত্রণ ও মেটাবলিজম</h3>
+            <h3 class="font-heading font-bold text-xl text-espresso mb-2">ওজন নিয়ন্ত্রণে সহায়ক</h3>
             <p class="text-espresso-light text-sm sm:text-base leading-relaxed">
-              সকালে কুসুম গরম পানি ও লেবুর রসের সাথে ১ চামচ মধু শরীরের মেটাবলিজম বাড়িয়ে বাড়তি মেদ ঝরাতে সাহায্য করে।
+              সকালে খালি পেটে কুসুম গরম পানি ও লেবুর রসের সাথে ১ চামচ মধু পান করলে শরীরের মেটাবলিজম বাড়ে এবং বাড়তি মেদ কমে।
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== ৫. খাঁটি মধু চেনার উপায় ও তুলনা (Purity & Comparison) ==================== -->
-    <section id="purity" class="py-14 sm:py-20 bg-white border-y border-honey-200/70">
+    <!-- ==================== ৪. খাঁটি মধু চেনার উপায় ও তুলনা (Purity & Comparison) ==================== -->
+    <section id="purity" class="py-14 sm:py-20 bg-honey-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="inline-block px-3 py-1 rounded-full bg-trust-light text-trust-dark text-xs sm:text-sm font-semibold mb-2">
             শতভাগ বিশুদ্ধতার নিশ্চয়তা
           </span>
           <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-espresso">
-            খাঁটি মধু চেনার উপায় ও বাজারের মধুর সাথে পার্থক্য
+            খাঁটি মধু চেনার উপায় ও ভেজাল মধুর সাথে পার্থক্য
           </h2>
           <p class="text-espresso-muted text-sm sm:text-base mt-2.5">
             কেনার আগে জেনে নিন কেন মধুবন অর্গানিকসের মধু বাজারের সাধারণ বোতলজাত মধুর চেয়ে সম্পূর্ণ আলাদা
@@ -424,142 +330,129 @@
         </div>
 
         <!-- তুলনামূলক টেবিল (Comparison Table) -->
-        <div class="overflow-x-auto rounded-3xl border border-honey-200 shadow-sm mb-12">
-          <table class="w-full text-left border-collapse min-w-[600px]">
+        <div class="overflow-x-auto rounded-3xl border border-honey-200 bg-white shadow-sm mb-12">
+          <table class="w-full text-left border-collapse min-w-[640px]">
             <thead>
               <tr class="bg-espresso text-white font-heading text-base sm:text-lg">
-                <th class="py-4 px-5 sm:px-6 w-1/4">বৈশিষ্ট্য</th>
+                <th class="py-4 px-5 sm:px-6 w-1/4">তুলনার বিষয়</th>
                 <th class="py-4 px-5 sm:px-6 w-[37.5%] bg-honey-600 text-white">
-                  <span class="flex items-center gap-2">
-                    ✅ মধুবন খাঁটি চাকের মধু
-                  </span>
+                  ✅ মধুবন অর্গানিকস খাঁটি মধু
                 </th>
                 <th class="py-4 px-5 sm:px-6 w-[37.5%] bg-espresso-light text-honey-100">
-                  ❌ বাজারের সাধারণ / ভেজাল মধু
+                  ❌ বাজারের সাধারণ ভেজাল মধু
                 </th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-honey-200 text-sm sm:text-base bg-honey-50/40">
+            <tbody class="divide-y divide-honey-200 text-sm sm:text-base">
               <tr>
                 <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">সংগ্রহের উৎস</td>
-                <td class="py-4 px-5 sm:px-6 bg-honey-100/50 text-espresso font-medium">
-                  সরাসরি সুন্দরবনের গভীর অরণ্যের খলিশা ও গরান ফুলের প্রাকৃতিক চাক থেকে সংগৃহীত।
+                <td class="py-4 px-5 sm:px-6 bg-honey-50/70 text-espresso font-medium">
+                  সরাসরি সুন্দরবনের গভীর অরণ্যের খলিশা ও গরান ফুলের প্রাকৃতিক মৌচাক থেকে সংগৃহীত।
                 </td>
                 <td class="py-4 px-5 sm:px-6 text-espresso-muted">
-                  অধিকাংশ ক্ষেত্রেই চিনি খাওয়ানো বক্সের মৌমাছি বা কৃত্রিম কারখানায় তৈরি।
+                  অধিকাংশ ক্ষেত্রেই চিনি খাওয়ানো বক্সের মৌমাছি বা কৃত্রিম কারখানায় তৈরি সিরাপ।
                 </td>
               </tr>
               <tr>
-                <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">চিনি বা সিরাপ</td>
-                <td class="py-4 px-5 sm:px-6 bg-honey-100/50 text-espresso font-medium">
-                  ০% চিনি, গ্লুকোজ বা কোনো প্রকার কেমিক্যাল ও প্রিজারভেটিভ মুক্ত।
+                <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">তাপ ও প্রসেসিং</td>
+                <td class="py-4 px-5 sm:px-6 bg-honey-50/70 text-espresso font-medium">
+                  কোনো তাপ বা মেশিন প্রসেসিং ছাড়াই সম্পূর্ণ প্রাকৃতিক (Raw) অবস্থায় সংরক্ষিত।
                 </td>
                 <td class="py-4 px-5 sm:px-6 text-espresso-muted">
-                  ঘনত্ব ও মিষ্টতা বাড়াতে চিনির সিরাপ, চিটাগুড় ও কৃত্রিম ফ্লেভার মেশানো থাকে।
+                  অতিরিক্ত তাপে প্রসেস করায় মধুর প্রাকৃতিক এনজাইম ও পুষ্টিগুণ নষ্ট হয়ে যায়।
                 </td>
               </tr>
               <tr>
-                <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">প্রাকৃতিক এনজাইম ও ঘ্রাণ</td>
-                <td class="py-4 px-5 sm:px-6 bg-honey-100/50 text-espresso font-medium">
-                  তাপ না দেওয়ায় প্রাকৃতিক পোলেন, এনজাইম ও বুনো ফুলের আসল ঘ্রাণ অটুট থাকে।
+                <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">ঘ্রাণ ও ঘনত্ব</td>
+                <td class="py-4 px-5 sm:px-6 bg-honey-50/70 text-espresso font-medium">
+                  বুনো ফুলের মিষ্টি প্রাকৃতিক ঘ্রাণ থাকে এবং জার ঝাঁকালে ওপরে সূক্ষ্ম ফেনা তৈরি হয়।
                 </td>
                 <td class="py-4 px-5 sm:px-6 text-espresso-muted">
-                  অতিরিক্ত তাপে প্রসেস করায় মধুর আসল পুষ্টিগুণ ও প্রাকৃতিক ঘ্রাণ নষ্ট হয়ে যায়।
+                  কৃত্রিম এসেন্সের গন্ধ থাকে এবং চিনির সিরাপের মতো একঘেয়ে মিষ্টি লাগে।
                 </td>
               </tr>
               <tr>
-                <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">রিটার্ন সুবিধা</td>
-                <td class="py-4 px-5 sm:px-6 bg-honey-100/50 text-trust-dark font-semibold">
-                  ডেলিভারি ম্যানের সামনে খুলে যাচাই করে নেওয়ার ও ১০০% মানি-ব্যাক গ্যারান্টি।
+                <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">শীতকালে জমে যাওয়া</td>
+                <td class="py-4 px-5 sm:px-6 bg-honey-50/70 text-espresso font-medium">
+                  প্রাকৃতিক পোলেন ও গ্লুকোজ থাকায় শীতকালে বা ঠান্ডায় জমে দানাদার হতে পারে (যা খাঁটি মধুর লক্ষণ)।
                 </td>
                 <td class="py-4 px-5 sm:px-6 text-espresso-muted">
-                  একবার কিনে ফেললে বা সিল খুললে ফেরত দেওয়ার কোনো সুযোগ থাকে না।
+                  কেমিক্যাল ও ইনভার্ট সিরাপ মেশানো থাকায় সারা বছর একই রকম পাতলা থাকে।
+                </td>
+              </tr>
+              <tr>
+                <td class="py-4 px-5 sm:px-6 font-heading font-bold text-espresso">ল্যাব ও রিটার্ন গ্যারান্টি</td>
+                <td class="py-4 px-5 sm:px-6 bg-honey-50/70 text-trust-dark font-semibold">
+                  ল্যাব টেস্টেড ও ডেলিভারি ম্যানের সামনে যাচাই করে নেওয়ার ৭ দিনের রিটার্ন গ্যারান্টি।
+                </td>
+                <td class="py-4 px-5 sm:px-6 text-espresso-muted">
+                  কোনো বিশুদ্ধতার গ্যারান্টি বা সিল খোলার পর ফেরত দেওয়ার সুযোগ নেই।
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- ঘরে বসে খাঁটি মধু পরীক্ষার ৩টি সহজ টিপস -->
-        <div class="mb-10">
+        <!-- ঘরে বসে খাঁটি মধু পরীক্ষার ৩টি সহজ উপায় -->
+        <div>
           <h3 class="font-heading font-bold text-xl sm:text-2xl text-espresso text-center mb-6">
             ঘরে বসে খাঁটি মধু পরীক্ষার ৩টি সহজ উপায়:
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div class="bg-honey-50 rounded-2xl p-5 border border-honey-200 flex items-start gap-3.5">
+            <div class="bg-white rounded-2xl p-5 sm:p-6 border border-honey-200 shadow-sm flex items-start gap-3.5">
               <div class="w-10 h-10 rounded-xl bg-honey-500 text-white font-heading font-bold flex items-center justify-center shrink-0">১</div>
               <div>
-                <h4 class="font-heading font-bold text-lg text-espresso mb-1">পানির পরীক্ষা</h4>
-                <p class="text-sm text-espresso-light leading-relaxed">এক গ্লাস সাধারণ পানিতে এক ফোঁটা মধু ছাড়ুন। খাঁটি মধু সহজে পানিতে মিশে যাবে না, বরং গ্লাসের তলানিতে জমা হবে।</p>
+                <h4 class="font-heading font-bold text-lg text-espresso mb-1">পানি পরীক্ষা</h4>
+                <p class="text-sm text-espresso-light leading-relaxed">এক গ্লাস সাধারণ পানিতে এক ফোঁটা মধু ছাড়ুন। খাঁটি মধু সহজে পানিতে গলে যাবে না, বরং সরাসরি গ্লাসের তলানিতে গিয়ে জমা হবে।</p>
               </div>
             </div>
-            <div class="bg-honey-50 rounded-2xl p-5 border border-honey-200 flex items-start gap-3.5">
+            <div class="bg-white rounded-2xl p-5 sm:p-6 border border-honey-200 shadow-sm flex items-start gap-3.5">
               <div class="w-10 h-10 rounded-xl bg-honey-500 text-white font-heading font-bold flex items-center justify-center shrink-0">২</div>
               <div>
-                <h4 class="font-heading font-bold text-lg text-espresso mb-1">টিস্যু পেপার পরীক্ষা</h4>
-                <p class="text-sm text-espresso-light leading-relaxed">এক টুকরো শুকনো টিস্যু পেপারে এক ফোঁটা মধু দিন। খাঁটি মধু হলে টিস্যু ভিজে ছিদ্র হবে না এবং অপর পাশে পানি ছড়াবে না।</p>
+                <h4 class="font-heading font-bold text-lg text-espresso mb-1">থাম্ব বা বৃদ্ধাঙ্গুলি পরীক্ষা</h4>
+                <p class="text-sm text-espresso-light leading-relaxed">আপনার বৃদ্ধাঙ্গুলির নখের ওপর এক ফোঁটা মধু দিন। খাঁটি মধু হলে এটি পানির মতো গড়িয়ে পড়বে না, বরং আঠালো হয়ে স্থির থাকবে।</p>
               </div>
             </div>
-            <div class="bg-honey-50 rounded-2xl p-5 border border-honey-200 flex items-start gap-3.5">
+            <div class="bg-white rounded-2xl p-5 sm:p-6 border border-honey-200 shadow-sm flex items-start gap-3.5">
               <div class="w-10 h-10 rounded-xl bg-honey-500 text-white font-heading font-bold flex items-center justify-center shrink-0">৩</div>
               <div>
-                <h4 class="font-heading font-bold text-lg text-espresso mb-1">ফোম ও প্রাকৃতিক ঘ্রাণ</h4>
-                <p class="text-sm text-espresso-light leading-relaxed">অপরিশোধিত প্রাকৃতিক মধুর জার হালকা ঝাঁকালে ওপরে সূক্ষ্ম প্রাকৃতিক ফেনা তৈরি হয় এবং বুনো ফুলের মিষ্টি ঘ্রাণ পাওয়া যায়।</p>
+                <h4 class="font-heading font-bold text-lg text-espresso mb-1">প্রাকৃতিক ঘ্রাণ ও চাক পরীক্ষা</h4>
+                <p class="text-sm text-espresso-light leading-relaxed">জারের মুখ খুললেই সুন্দরবনের বুনো ফুলের স্নিগ্ধ ঘ্রাণ পাবেন এবং হালকা ঝাঁকালে প্রাকৃতিক এনজাইমের সূক্ষ্ম ফেনা দেখা যাবে।</p>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- হাইলাইটেড মানি-ব্যাক গ্যারান্টি বক্স -->
-        <div class="rounded-3xl bg-gradient-to-r from-trust-dark via-trust to-emerald-700 p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
-          <div class="flex items-start sm:items-center gap-4">
-            <div class="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur flex items-center justify-center text-3xl shrink-0">
-              🛡️
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-xl sm:text-2xl leading-snug">
-                ১০০% মানি-ব্যাক গ্যারান্টি:
-              </h3>
-              <p class="text-emerald-50 text-sm sm:text-base mt-1 leading-relaxed">
-                ডেলিভারি ম্যানের সামনে খুলে ঘ্রাণ ও মান যাচাই করে মূল্য পরিশোধের সুবিধা! পছন্দ না হলে বা ভেজাল প্রমাণিত হলে সাথে সাথে রিটার্ন করতে পারবেন।
-              </p>
-            </div>
-          </div>
-          <a href="#order" class="w-full md:w-auto shrink-0 inline-flex items-center justify-center bg-white text-trust-dark hover:bg-honey-100 font-heading font-bold px-6 py-3.5 rounded-2xl shadow-md transition-all">
-            নিশ্চিন্তে অর্ডার করুন
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- ==================== ৬. প্যাকেজ ও স্পেশাল অফার (Packages & Pricing) ==================== -->
-    <section id="packages" class="py-14 sm:py-20 bg-honey-50">
+    <!-- ==================== ৫. প্যাকেজ ও দাম (Packages & Pricing) ==================== -->
+    <section id="packages" class="py-14 sm:py-20 bg-white border-y border-honey-200/70">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-12">
           <span class="inline-block px-3 py-1 rounded-full bg-honey-100 text-honey-800 text-xs sm:text-sm font-semibold mb-2">
-            সীমিত সময়ের স্পেশাল অফার
+            বিশেষ ডিসকাউন্ট অফার
           </span>
           <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-espresso">
-            আপনার পরিবারের জন্য সেরা প্যাকেজটি বেছে নিন
+            আপনার পছন্দের প্যাকেজ বেছে নিন
           </h2>
           <p class="text-espresso-muted text-sm sm:text-base mt-2.5">
-            ১ কেজি বা ২ কেজি প্যাকেজ অর্ডার করলেই পাচ্ছেন সারা দেশে <span class="font-bold text-trust">সম্পূর্ণ ফ্রি হোম ডেলিভারি!</span>
+            ১ কেজি বা ২ কেজি প্যাকেজ নিলেই পাচ্ছেন সারা বাংলাদেশে <span class="font-bold text-trust">সম্পূর্ণ ফ্রি হোম ডেলিভারি!</span>
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           
-          <!-- প্যাকেজ ১: স্টার্টার প্যাক (৫০০ গ্রাম) -->
-          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-honey-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <!-- প্যাকেজ ১: ৫০০ গ্রাম জার -->
+          <div class="bg-honey-50/60 rounded-3xl p-6 sm:p-7 border border-honey-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-honey-100 text-honey-800">স্টার্টার প্যাক</span>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-honey-100 text-honey-800">প্যাকেজ ১</span>
                 <span class="text-sm font-semibold text-espresso-muted">৫০০ গ্রাম জার</span>
               </div>
               <h3 class="font-heading font-bold text-2xl text-espresso mb-2">সুন্দরবনের চাকের মধু (৫০০ গ্রাম)</h3>
-              <p class="text-sm text-espresso-muted mb-5">প্রথমবার টেস্ট করে দেখার জন্য আদর্শ প্যাক।</p>
+              <p class="text-sm text-espresso-muted mb-5">প্রথমবার খাঁটি মধু যাচাই করে দেখার জন্য আদর্শ প্যাক।</p>
 
-              <div class="flex items-baseline gap-2.5 mb-6 pb-6 border-b border-honey-100">
+              <div class="flex items-baseline gap-2.5 mb-6 pb-6 border-b border-honey-200">
                 <span class="font-heading font-bold text-4xl text-espresso">৳৬৫০</span>
                 <span class="text-lg text-espresso-muted line-through">৳৭৫০</span>
                 <span class="text-xs font-semibold text-honey-700 bg-honey-100 px-2 py-0.5 rounded-lg">৳১০০ ছাড়</span>
@@ -576,7 +469,7 @@
                 </li>
                 <li class="flex items-center gap-2.5 text-espresso-muted">
                   <svg class="w-5 h-5 text-honey-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                  <span>+ ডেলিভারি চার্জ প্রযোজ্য</span>
+                  <span>ডেলিভারি চার্জ প্রযোজ্য</span>
                 </li>
               </ul>
             </div>
@@ -586,25 +479,25 @@
             </button>
           </div>
 
-          <!-- প্যাকেজ ২: জনপ্রিয় প্যাক (১ কেজি) - হাইলাইটেড -->
+          <!-- প্যাকেজ ২: ১ কেজি জার (সবচেয়ে জনপ্রিয় / Best Seller) -->
           <div class="relative bg-white rounded-3xl p-6 sm:p-8 border-2 border-honey-500 shadow-xl shadow-honey-500/15 flex flex-col justify-between md:-translate-y-2">
             <!-- ব্যাজ -->
             <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-honey-600 to-honey-500 text-white font-heading font-bold text-xs sm:text-sm px-4 py-1.5 rounded-full shadow-md whitespace-nowrap">
-              সবচেয়ে বেশি বিক্রিত ⭐
+              সবচেয়ে জনপ্রিয় (Best Seller) ⭐
             </div>
 
             <div>
               <div class="flex items-center justify-between mb-3 mt-1">
-                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-honey-500/15 text-honey-800">জনপ্রিয় প্যাক</span>
-                <span class="text-sm font-bold text-honey-700">১ কেজি (১০০০ গ্রাম)</span>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-honey-500/15 text-honey-800">প্যাকেজ ২</span>
+                <span class="text-sm font-bold text-honey-700">১ কেজি জার</span>
               </div>
               <h3 class="font-heading font-bold text-2xl text-espresso mb-2">সুন্দরবনের চাকের মধু (১ কেজি)</h3>
-              <p class="text-sm text-espresso-muted mb-5">পুরো পরিবারের ১-২ মাসের নিয়মিত ব্যবহারের জন্য সেরা।</p>
+              <p class="text-sm text-espresso-muted mb-5">পুরো পরিবারের নিয়মিত ব্যবহারের জন্য সেরা ও সাশ্রয়ী প্যাক।</p>
 
               <div class="flex items-baseline gap-2.5 mb-6 pb-6 border-b border-honey-100">
                 <span class="font-heading font-bold text-4xl sm:text-5xl text-honey-600">৳১,২০০</span>
-                <span class="text-lg text-espresso-muted line-through">৳১,৫০০</span>
-                <span class="text-xs font-bold text-trust-dark bg-trust-light px-2.5 py-1 rounded-lg">৳৩০০ সাশ্রয়</span>
+                <span class="text-lg text-espresso-muted line-through">৳১,৪৫০</span>
+                <span class="text-xs font-bold text-trust-dark bg-trust-light px-2.5 py-1 rounded-lg">৳২৫০ সাশ্রয়</span>
               </div>
 
               <ul class="space-y-3 text-sm sm:text-base text-espresso font-medium mb-8">
@@ -614,11 +507,11 @@
                 </li>
                 <li class="flex items-center gap-2.5 text-trust-dark font-bold">
                   <svg class="w-5 h-5 text-trust shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span>সারা দেশে ফ্রি হোম ডেলিভারি!</span>
+                  <span>সম্পূর্ণ ফ্রি হোম ডেলিভারি!</span>
                 </li>
                 <li class="flex items-center gap-2.5">
                   <svg class="w-5 h-5 text-trust shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span>১০০% মানি-ব্যাক গ্যারান্টি</span>
+                  <span>৭ দিনের ১০০% রিটার্ন গ্যারান্টি</span>
                 </li>
               </ul>
             </div>
@@ -628,34 +521,34 @@
             </button>
           </div>
 
-          <!-- প্যাকেজ ৩: ফ্যামিলি প্যাক (২ কেজি) -->
-          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-honey-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <!-- প্যাকেজ ৩: ২ কেজি জার (ফ্যামিলি সেভার প্যাক) -->
+          <div class="bg-honey-50/60 rounded-3xl p-6 sm:p-7 border border-honey-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-espresso text-honey-300">ফ্যামিলি প্যাক</span>
-                <span class="text-sm font-semibold text-espresso-muted">২ কেজি (১ কেজি × ২ জার)</span>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-espresso text-honey-300">ফ্যামিলি সেভার প্যাক</span>
+                <span class="text-sm font-semibold text-espresso-muted">২ কেজি জার</span>
               </div>
               <h3 class="font-heading font-bold text-2xl text-espresso mb-2">সুন্দরবনের চাকের মধু (২ কেজি)</h3>
-              <p class="text-sm text-espresso-muted mb-5">সর্বোচ্চ সাশ্রয় ও ফ্রি গিফটসহ সুপার ভ্যালু প্যাক।</p>
+              <p class="text-sm text-espresso-muted mb-5">সর্বোচ্চ ডিসকাউন্ট ও ফ্রি গিফটসহ সুপার ভ্যালু প্যাক।</p>
 
-              <div class="flex items-baseline gap-2.5 mb-6 pb-6 border-b border-honey-100">
+              <div class="flex items-baseline gap-2.5 mb-6 pb-6 border-b border-honey-200">
                 <span class="font-heading font-bold text-4xl text-espresso">৳২,২৫০</span>
-                <span class="text-lg text-espresso-muted line-through">৳৩,০০০</span>
-                <span class="text-xs font-bold text-trust-dark bg-trust-light px-2 py-0.5 rounded-lg">৳৭৫০ সাশ্রয়</span>
+                <span class="text-lg text-espresso-muted line-through">৳২,৮০০</span>
+                <span class="text-xs font-bold text-trust-dark bg-trust-light px-2 py-0.5 rounded-lg">৳৫৫০ সাশ্রয়</span>
               </div>
 
               <ul class="space-y-3 text-sm sm:text-base text-espresso-light mb-8">
                 <li class="flex items-center gap-2.5">
                   <svg class="w-5 h-5 text-trust shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span>২ কেজি খাঁটি চাকের মধু (২টি জারে)</span>
+                  <span>২ কেজি ১০০% খাঁটি চাকের মধু</span>
                 </li>
                 <li class="flex items-center gap-2.5 text-trust-dark font-semibold">
                   <svg class="w-5 h-5 text-trust shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span>সারা দেশে ফ্রি হোম ডেলিভারি!</span>
+                  <span>ফ্রি হোম ডেলিভারি!</span>
                 </li>
                 <li class="flex items-center gap-2.5 text-honey-800 font-semibold">
                   <span class="text-base">🎁</span>
-                  <span>১টি প্রিমিয়াম কাঠের হানি ডিপার ফ্রি!</span>
+                  <span>ফ্রি প্রিমিয়াম কাঠের হানি ডিপার!</span>
                 </li>
               </ul>
             </div>
@@ -669,26 +562,25 @@
       </div>
     </section>
 
-    <!-- ==================== ৭. কাস্টমার রিভিউ (Customer Reviews) ==================== -->
-    <section id="reviews" class="py-14 sm:py-20 bg-white border-y border-honey-200/70">
+    <!-- ==================== ৬. কাস্টমার রিভিউ (Customer Reviews) ==================== -->
+    <section id="reviews" class="py-14 sm:py-20 bg-honey-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-12">
           <span class="inline-block px-3 py-1 rounded-full bg-honey-100 text-honey-800 text-xs sm:text-sm font-semibold mb-2">
             সন্তুষ্ট গ্রাহকদের মতামত
           </span>
           <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-espresso">
-            আমাদের নিয়মিত ক্রেতারা কী বলছেন?
+            সম্মানিত ক্রেতাদের অভিজ্ঞতা
           </h2>
           <p class="text-espresso-muted text-sm sm:text-base mt-2.5">
-            সারা দেশের ১,২০০+ পরিবার নিয়মিত মধুবন অর্গানিকসের মধু ব্যবহার করছেন
+            ঢাকা, চট্টগ্রাম, সিলেটসহ সারা দেশের হাজারো পরিবার নিয়মিত মধুবন অর্গানিকসের মধু ব্যবহার করছেন
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- রিভিউ ১ -->
-          <div class="bg-honey-50/80 rounded-3xl p-6 border border-honey-200 flex flex-col justify-between">
+          <!-- রিভিউ ১: ঢাকা -->
+          <div class="bg-white rounded-3xl p-6 border border-honey-200 shadow-sm flex flex-col justify-between">
             <div>
-              <!-- ৫ স্টার রেটিং -->
               <div class="flex items-center gap-1 text-honey-500 mb-3" aria-label="৫ স্টার রেটিং">
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -700,20 +592,20 @@
                 “ঢাকায় বসে সুন্দরবনের এমন খাঁটি মধু পাব ভাবিনি। ডেলিভারি ম্যানের সামনে জার খুলে ঘ্রাণ নিয়েই বুঝেছি এটা একদম আসল চাকের মধু। পানির টেস্টেও ১০০% পাস করেছে!”
               </p>
             </div>
-            <div class="flex items-center justify-between pt-4 border-t border-honey-200/80">
+            <div class="flex items-center justify-between pt-4 border-t border-honey-100">
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-honey-600 text-white font-heading font-bold flex items-center justify-center">তা</div>
                 <div>
                   <h4 class="font-heading font-bold text-espresso text-base">তানভীর আহমেদ</h4>
-                  <p class="text-xs text-espresso-muted">উত্তরা, ঢাকা • ১ কেজি প্যাক</p>
+                  <p class="text-xs text-espresso-muted">উত্তরা, ঢাকা</p>
                 </div>
               </div>
-              <span class="text-[11px] font-semibold text-trust-dark bg-trust-light px-2.5 py-1 rounded-full">✓ ভেরিফায়েড</span>
+              <span class="text-[11px] font-semibold text-trust-dark bg-trust-light px-2.5 py-1 rounded-full">✓ ভেরিফায়েড ক্রেতা</span>
             </div>
           </div>
 
-          <!-- রিভিউ ২ -->
-          <div class="bg-honey-50/80 rounded-3xl p-6 border border-honey-200 flex flex-col justify-between">
+          <!-- রিভিউ ২: চট্টগ্রাম -->
+          <div class="bg-white rounded-3xl p-6 border border-honey-200 shadow-sm flex flex-col justify-between">
             <div>
               <div class="flex items-center gap-1 text-honey-500 mb-3" aria-label="৫ স্টার রেটিং">
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -723,133 +615,120 @@
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
               </div>
               <p class="text-espresso-light text-sm sm:text-base leading-relaxed italic mb-5">
-                “আমার বাচ্চাদের প্রতিদিন সকালে কুসুম গরম পানির সাথে দিই। বাজারের সুপারশপের মধুর সাথে এর স্বাদ ও টেক্সচারের আকাশ-পাতাল পার্থক্য। ২ কেজি ফ্যামিলি প্যাকের সাথে হানি ডিপারটাও খুব সুন্দর।”
+                “চট্টগ্রামে মাত্র ২ দিনের মধ্যেই হাতে পেয়েছি। প্যাকেজিং এত মজবুত ছিল যে এক ফোঁটাও লিক হয়নি। বাবার সর্দি-কাশির জন্য ২ কেজি ফ্যামিলি প্যাক নিয়েছিলাম, মাশাআল্লাহ খুব উপকার পাচ্ছেন।”
               </p>
             </div>
-            <div class="flex items-center justify-between pt-4 border-t border-honey-200/80">
+            <div class="flex items-center justify-between pt-4 border-t border-honey-100">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-espresso text-honey-300 font-heading font-bold flex items-center justify-center">ফা</div>
-                <div>
-                  <h4 class="font-heading font-bold text-espresso text-base">ডা. ফারহানা ইসলাম</h4>
-                  <p class="text-xs text-espresso-muted">ধানমন্ডি, ঢাকা • ২ কেজি ফ্যামিলি প্যাক</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-semibold text-trust-dark bg-trust-light px-2.5 py-1 rounded-full">✓ ভেরিফায়েড</span>
-            </div>
-          </div>
-
-          <!-- রিভিউ ৩ -->
-          <div class="bg-honey-50/80 rounded-3xl p-6 border border-honey-200 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-1 text-honey-500 mb-3" aria-label="৫ স্টার রেটিং">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              </div>
-              <p class="text-espresso-light text-sm sm:text-base leading-relaxed italic mb-5">
-                “চট্টগ্রামে মাত্র ২ দিনের মধ্যেই হাতে পেয়েছি। প্যাকেজিং এত মজবুত ছিল যে এক ফোঁটাও লিক হয়নি। বাবার সর্দি-কাশির জন্য নিয়েছিলাম, মাশাআল্লাহ খুব উপকার পাচ্ছেন।”
-              </p>
-            </div>
-            <div class="flex items-center justify-between pt-4 border-t border-honey-200/80">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-trust text-white font-heading font-bold flex items-center justify-center">মা</div>
+                <div class="w-10 h-10 rounded-full bg-espresso text-honey-300 font-heading font-bold flex items-center justify-center">মা</div>
                 <div>
                   <h4 class="font-heading font-bold text-espresso text-base">মাহমুদুল হাসান</h4>
-                  <p class="text-xs text-espresso-muted">আগ্রাবাদ, চট্টগ্রাম • ১ কেজি প্যাক</p>
+                  <p class="text-xs text-espresso-muted">আগ্রাবাদ, চট্টগ্রাম</p>
                 </div>
               </div>
-              <span class="text-[11px] font-semibold text-trust-dark bg-trust-light px-2.5 py-1 rounded-full">✓ ভেরিফায়েড</span>
+              <span class="text-[11px] font-semibold text-trust-dark bg-trust-light px-2.5 py-1 rounded-full">✓ ভেরিফায়েড ক্রেতা</span>
+            </div>
+          </div>
+
+          <!-- রিভিউ ৩: সিলেট -->
+          <div class="bg-white rounded-3xl p-6 border border-honey-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-honey-500 mb-3" aria-label="৫ স্টার রেটিং">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-espresso-light text-sm sm:text-base leading-relaxed italic mb-5">
+                “আমার বাচ্চাদের প্রতিদিন সকালে কুসুম গরম পানির সাথে দিই। বাজারের সুপারশপের মধুর সাথে এর স্বাদ ও টেক্সচারের আকাশ-পাতাল পার্থক্য। সিলেটে বসে ফ্রি ডেলিভারিতে ১ কেজি পেয়ে খুবই খুশি।”
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-honey-100">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-trust text-white font-heading font-bold flex items-center justify-center">ফা</div>
+                <div>
+                  <h4 class="font-heading font-bold text-espresso text-base">ডা. ফারহানা ইসলাম</h4>
+                  <p class="text-xs text-espresso-muted">জিন্দাবাজার, সিলেট</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-semibold text-trust-dark bg-trust-light px-2.5 py-1 rounded-full">✓ ভেরিফায়েড ক্রেতা</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== ৮. সচরাচর জিজ্ঞাসিত প্রশ্ন (FAQ Accordion) ==================== -->
-    <section id="faq" class="py-14 sm:py-20 bg-honey-50">
+    <!-- ==================== ৭. সচরাচর জিজ্ঞাসিত প্রশ্নাবলী (FAQ Section) ==================== -->
+    <section id="faq" class="py-14 sm:py-20 bg-white border-y border-honey-200/70">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10">
           <span class="inline-block px-3 py-1 rounded-full bg-honey-100 text-honey-800 text-xs sm:text-sm font-semibold mb-2">
             আপনার প্রশ্নের উত্তর
           </span>
           <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-espresso">
-            সচরাচর জিজ্ঞাসিত প্রশ্ন (FAQ)
+            সচরাচর জিজ্ঞাসিত প্রশ্নাবলী
           </h2>
         </div>
 
         <div class="space-y-3.5" id="faqAccordion">
           <!-- প্রশ্ন ১ -->
-          <div class="bg-white rounded-2xl border border-honey-200 overflow-hidden">
-            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-50/70 transition-colors" aria-expanded="true">
-              <span>১. মধু খাঁটি না হলে কি ফেরত দেওয়া যাবে?</span>
+          <div class="bg-honey-50/70 rounded-2xl border border-honey-200 overflow-hidden">
+            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-100/60 transition-colors" aria-expanded="true">
+              <span>১. শীতকালে মধু জমে গেলে কি তা ভেজাল?</span>
               <svg class="faq-icon w-5 h-5 text-honey-600 shrink-0 rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="faq-content px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-100 pt-3">
-              জ্বি অবশ্যই! আমাদের প্রতিটি জারে থাকছে ১০০% মানি-ব্যাক গ্যারান্টি। ডেলিভারি ম্যানের সামনে জার খুলে ঘ্রাণ ও স্বাদ যাচাই করে নেওয়ার সুযোগ রয়েছে। কোনো কারণে পছন্দ না হলে বা ভেজাল প্রমাণিত হলে সাথে সাথে রিটার্ন করতে পারবেন।
-            </div>
-          </div>
-
-          <!-- প্রশ্ন ২ -->
-          <div class="bg-white rounded-2xl border border-honey-200 overflow-hidden">
-            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-50/70 transition-colors" aria-expanded="false">
-              <span>২. অগ্রিম কোনো টাকা দিতে হবে কি?</span>
-              <svg class="faq-icon w-5 h-5 text-honey-600 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-100 pt-3">
-              না, অর্ডার কনফার্ম করার জন্য অগ্রিম ১ টাকাও দিতে হবে না। সারা বাংলাদেশে সম্পূর্ণ <strong>ক্যাশ অন ডেলিভারি (Cash on Delivery)</strong> সুবিধায় প্রোডাক্ট হাতে পেয়ে মূল্য পরিশোধ করবেন।
-            </div>
-          </div>
-
-          <!-- প্রশ্ন ৩ -->
-          <div class="bg-white rounded-2xl border border-honey-200 overflow-hidden">
-            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-50/70 transition-colors" aria-expanded="false">
-              <span>৩. শীতকালে মধু জমে গেলে কি সেটা ভেজাল?</span>
-              <svg class="faq-icon w-5 h-5 text-honey-600 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-100 pt-3">
+            <div class="faq-content px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-200/70 pt-3">
               একদমই না! বরং শীতকালে বা কম তাপমাত্রায় প্রাকৃতিক অপরিশোধিত (Raw) মধু জমে দানাদার হয়ে যাওয়াটাই <strong>খাঁটি মধুর অন্যতম প্রধান বৈশিষ্ট্য</strong>। ফুলের প্রাকৃতিক গ্লুকোজ ও পোলেন থাকার কারণে ঠান্ডায় এটি জমে যায়। রোদে রাখলে বা জারের নিচে হালকা কুসুম গরম পানি দিলে এটি আবার আগের মতো তরল হয়ে যায়।
             </div>
           </div>
 
-          <!-- প্রশ্ন ৪ -->
-          <div class="bg-white rounded-2xl border border-honey-200 overflow-hidden">
-            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-50/70 transition-colors" aria-expanded="false">
-              <span>৪. ডেলিভারি পেতে কত দিন সময় লাগে?</span>
+          <!-- প্রশ্ন ২ -->
+          <div class="bg-honey-50/70 rounded-2xl border border-honey-200 overflow-hidden">
+            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-100/60 transition-colors" aria-expanded="false">
+              <span>২. অর্ডার করার কতদিনের মধ্যে ডেলিভারি পাবো?</span>
               <svg class="faq-icon w-5 h-5 text-honey-600 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-100 pt-3">
+            <div class="faq-content hidden px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-200/70 pt-3">
               ঢাকা সিটির ভেতরে সাধারণত ২৪ থেকে ৪৮ ঘণ্টার মধ্যে এবং ঢাকার বাইরে সারা দেশের জেলা ও উপজেলা পর্যায়ে ২ থেকে ৩ কার্যদিবসের মধ্যে হোম ডেলিভারি পৌঁছে যায়।
             </div>
           </div>
 
-          <!-- প্রশ্ন ৫ -->
-          <div class="bg-white rounded-2xl border border-honey-200 overflow-hidden">
-            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-50/70 transition-colors" aria-expanded="false">
-              <span>৫. মধু কীভাবে সংরক্ষণ করব?</span>
+          <!-- প্রশ্ন ৩ -->
+          <div class="bg-honey-50/70 rounded-2xl border border-honey-200 overflow-hidden">
+            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-100/60 transition-colors" aria-expanded="false">
+              <span>৩. অগ্রিম কোনো টাকা দিতে হবে কি?</span>
               <svg class="faq-icon w-5 h-5 text-honey-600 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-100 pt-3">
-              মধু ফ্রিজে রাখার কোনো প্রয়োজন নেই। সাধারণ রুম টেম্পারেচারে শুকনো ও ছায়াযুক্ত স্থানে মুখ ভালোভাবে আটকে রাখুন। মধু নেওয়ার সময় সবসময় শুকনো চামচ ব্যবহার করলে এটি বছরের পর বছর ভালো থাকে।
+            <div class="faq-content hidden px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-200/70 pt-3">
+              না, অর্ডার কনফার্ম করার জন্য অগ্রিম ১ টাকাও দিতে হবে না। সারা বাংলাদেশে সম্পূর্ণ <strong>ক্যাশ অন ডেলিভারি (Cash on Delivery)</strong> সুবিধায় প্রোডাক্ট হাতে পেয়ে মূল্য পরিশোধ করবেন।
+            </div>
+          </div>
+
+          <!-- প্রশ্ন ৪ -->
+          <div class="bg-honey-50/70 rounded-2xl border border-honey-200 overflow-hidden">
+            <button type="button" class="faq-toggle w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-espresso hover:bg-honey-100/60 transition-colors" aria-expanded="false">
+              <span>৪. মধু পছন্দ না হলে কি ফেরত দেওয়া যাবে?</span>
+              <svg class="faq-icon w-5 h-5 text-honey-600 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content hidden px-5 sm:px-6 pb-5 text-sm sm:text-base text-espresso-light leading-relaxed border-t border-honey-200/70 pt-3">
+              জ্বি অবশ্যই! আমাদের প্রতিটি জারে থাকছে ৭ দিনের ১০০% রিটার্ন গ্যারান্টি। ডেলিভারি ম্যানের সামনে জার খুলে ঘ্রাণ ও মান যাচাই করে নেওয়ার সুযোগ রয়েছে। কোনো কারণে পছন্দ না হলে বা ভেজাল প্রমাণিত হলে সাথে সাথে রিটার্ন করতে পারবেন।
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== ৯. ইন্টার‍্যাক্টিভ অর্ডার ফর্ম (Order Form) ==================== -->
-    <section id="order" class="py-14 sm:py-20 bg-gradient-to-b from-honey-100/70 to-honey-100 border-t border-honey-200">
+    <!-- ==================== ৮. অর্ডার ফর্ম ও লাইভ বিল ক্যালকুলেটর (#order-section) ==================== -->
+    <section id="order-section" class="py-14 sm:py-20 bg-gradient-to-b from-amber-100/60 to-honey-100">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-10">
           <span class="inline-block px-3.5 py-1 rounded-full bg-trust-light text-trust-dark text-xs sm:text-sm font-bold mb-2">
@@ -866,7 +745,7 @@
         <form id="orderForm" novalidate class="bg-white rounded-3xl shadow-2xl shadow-honey-900/10 border border-honey-200 p-5 sm:p-8 lg:p-10">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
             
-            <!-- বাম কলাম (৭ কলাম): প্যাকেজ, ডেলিভারি এরিয়া ও কাস্টমার তথ্য -->
+            <!-- বাম কলাম (৭ কলাম): প্যাকেজ, পরিমাণ, ডেলিভারি এলাকা ও ঠিকানা -->
             <div class="lg:col-span-7 space-y-7">
               
               <!-- ধাপ ১: প্যাকেজ নির্বাচন -->
@@ -880,7 +759,7 @@
                   <label class="package-radio-card cursor-pointer relative rounded-2xl border-2 border-honey-200 p-3.5 transition-all hover:border-honey-400 flex flex-col justify-between" data-pkg="500g">
                     <input type="radio" name="package" value="500g" class="sr-only" />
                     <div class="flex items-center justify-between mb-1">
-                      <span class="font-heading font-bold text-base text-espresso">৫০০ গ্রাম</span>
+                      <span class="font-heading font-bold text-base text-espresso">৫০০ গ্রাম জার</span>
                       <span class="radio-dot w-4 h-4 rounded-full border-2 border-honey-400 flex items-center justify-center"></span>
                     </div>
                     <div>
@@ -894,7 +773,7 @@
                     <input type="radio" name="package" value="1kg" checked class="sr-only" />
                     <span class="absolute -top-2.5 right-2.5 bg-honey-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">জনপ্রিয় ⭐</span>
                     <div class="flex items-center justify-between mb-1">
-                      <span class="font-heading font-bold text-base text-espresso">১ কেজি</span>
+                      <span class="font-heading font-bold text-base text-espresso">১ কেজি জার</span>
                       <span class="radio-dot w-4 h-4 rounded-full border-2 border-honey-600 bg-honey-600 flex items-center justify-center"></span>
                     </div>
                     <div>
@@ -907,7 +786,7 @@
                   <label class="package-radio-card cursor-pointer relative rounded-2xl border-2 border-honey-200 p-3.5 transition-all hover:border-honey-400 flex flex-col justify-between" data-pkg="2kg">
                     <input type="radio" name="package" value="2kg" class="sr-only" />
                     <div class="flex items-center justify-between mb-1">
-                      <span class="font-heading font-bold text-base text-espresso">২ কেজি</span>
+                      <span class="font-heading font-bold text-base text-espresso">২ কেজি জার</span>
                       <span class="radio-dot w-4 h-4 rounded-full border-2 border-honey-400 flex items-center justify-center"></span>
                     </div>
                     <div>
@@ -919,11 +798,38 @@
                 </div>
               </div>
 
-              <!-- ধাপ ২: ডেলিভারি এলাকা -->
+              <!-- ধাপ ২: পরিমাণ (Quantity Selector - / +) -->
+              <div class="flex flex-wrap items-center justify-between gap-4 bg-honey-50/80 p-4 rounded-2xl border border-honey-200">
+                <div>
+                  <span class="font-heading font-bold text-base sm:text-lg text-espresso block">২. পরিমাণ (Quantity)</span>
+                  <span class="text-xs text-espresso-muted">কতটি জার অর্ডার করতে চান তা নির্বাচন করুন</span>
+                </div>
+                <div class="inline-flex items-center bg-white border-2 border-honey-300 rounded-xl overflow-hidden shadow-sm">
+                  <button
+                    type="button"
+                    id="qtyMinusBtn"
+                    aria-label="পরিমাণ কমান"
+                    class="w-11 h-11 flex items-center justify-center text-espresso hover:bg-honey-100 active:bg-honey-200 font-bold text-xl transition-colors"
+                  >
+                    −
+                  </button>
+                  <span id="qtyDisplay" class="w-12 text-center font-heading font-bold text-lg text-espresso select-none">১</span>
+                  <button
+                    type="button"
+                    id="qtyPlusBtn"
+                    aria-label="পরিমাণ বাড়ান"
+                    class="w-11 h-11 flex items-center justify-center text-espresso hover:bg-honey-100 active:bg-honey-200 font-bold text-xl transition-colors"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <!-- ধাপ ৩: ডেলিভারি এলাকা -->
               <div>
                 <div class="flex items-center justify-between mb-3">
                   <label class="block font-heading font-bold text-lg text-espresso">
-                    ২. ডেলিভারি এলাকা নির্বাচন করুন <span class="text-red-500">*</span>
+                    ৩. ডেলিভারি এলাকা নির্বাচন করুন <span class="text-red-500">*</span>
                   </label>
                   <span id="freeDeliveryBadge" class="text-xs font-bold text-trust-dark bg-trust-light px-2.5 py-1 rounded-full">
                     🎉 ফ্রি ডেলিভারি প্রযোজ্য!
@@ -934,7 +840,7 @@
                     <input type="radio" name="location" value="inside" checked class="sr-only" />
                     <div>
                       <span class="font-heading font-bold text-base text-espresso block">ঢাকার ভেতরে</span>
-                      <span class="text-xs text-espresso-muted">২৪-৪৮ ঘণ্টায় হোম ডেলিভারি</span>
+                      <span class="text-xs text-espresso-muted">সাধারণ চার্জ ৳৬০</span>
                     </div>
                     <span id="insideChargeLabel" class="font-heading font-bold text-base text-trust-dark">৳০ (ফ্রি)</span>
                   </label>
@@ -942,33 +848,33 @@
                   <label class="location-radio-card cursor-pointer rounded-2xl border-2 border-honey-200 p-3.5 flex items-center justify-between transition-all" data-loc="outside">
                     <input type="radio" name="location" value="outside" class="sr-only" />
                     <div>
-                      <span class="font-heading font-bold text-base text-espresso block">ঢাকার বাইরে (সারা দেশ)</span>
-                      <span class="text-xs text-espresso-muted">২-৩ কার্যদিবসে হোম ডেলিভারি</span>
+                      <span class="font-heading font-bold text-base text-espresso block">ঢাকার বাইরে</span>
+                      <span class="text-xs text-espresso-muted">সাধারণ চার্জ ৳১২০</span>
                     </div>
                     <span id="outsideChargeLabel" class="font-heading font-bold text-base text-trust-dark">৳০ (ফ্রি)</span>
                   </label>
                 </div>
               </div>
 
-              <!-- ধাপ ৩: কাস্টমারের ঠিকানা ও তথ্য -->
+              <!-- ধাপ ৪: কাস্টমারের তথ্য ও ঠিকানা -->
               <div class="space-y-4">
                 <h3 class="font-heading font-bold text-lg text-espresso">
-                  ৩. ডেলিভারি ঠিকানা দিন
+                  ৪. কাস্টমারের তথ্য ও ডেলিভারি ঠিকানা
                 </h3>
 
-                <!-- নাম -->
+                <!-- আপনার নাম -->
                 <div>
                   <label for="customerName" class="block text-sm font-semibold text-espresso mb-1.5">
-                    আপনার সম্পূর্ণ নাম <span class="text-red-500">*</span>
+                    আপনার নাম <span class="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
                     id="customerName"
                     name="customerName"
-                    placeholder="যেমন: মোঃ তানভীর আহমেদ"
+                    placeholder="আপনার সম্পূর্ণ নাম লিখুন"
                     class="w-full px-4 py-3.5 rounded-xl border border-honey-300 bg-honey-50/40 text-espresso placeholder-espresso-muted/60 focus:outline-none focus:ring-2 focus:ring-honey-500 focus:border-honey-500 transition-all"
                   />
-                  <p id="nameError" class="hidden text-xs font-medium text-red-600 mt-1">অনুগ্রহ করে আপনার নাম লিখুন।</p>
+                  <p id="nameError" class="hidden text-xs font-medium text-red-600 mt-1">অনুগ্রহ করে আপনার সম্পূর্ণ নাম লিখুন।</p>
                 </div>
 
                 <!-- মোবাইল নম্বর -->
@@ -983,13 +889,13 @@
                     placeholder="যেমন: 017XXXXXXXX বা ০১৭XXXXXXXX"
                     class="w-full px-4 py-3.5 rounded-xl border border-honey-300 bg-honey-50/40 text-espresso placeholder-espresso-muted/60 focus:outline-none focus:ring-2 focus:ring-honey-500 focus:border-honey-500 transition-all"
                   />
-                  <p id="phoneError" class="hidden text-xs font-medium text-red-600 mt-1">অনুগ্রহ করে সঠিক ১১ ডিজিটের বাংলাদেশি মোবাইল নম্বর দিন।</p>
+                  <p id="phoneError" class="hidden text-xs font-medium text-red-600 mt-1">অনুগ্রহ করে সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন।</p>
                 </div>
 
-                <!-- সম্পূর্ণ ঠিকানা -->
+                <!-- সম্পূর্ণ ঠিকানা (জেলা ও থানা সহ) -->
                 <div>
                   <label for="customerAddress" class="block text-sm font-semibold text-espresso mb-1.5">
-                    সম্পূর্ণ ডেলিভারি ঠিকানা <span class="text-red-500">*</span>
+                    সম্পূর্ণ ঠিকানা (জেলা ও থানা সহ) <span class="text-red-500">*</span>
                   </label>
                   <textarea
                     id="customerAddress"
@@ -998,12 +904,12 @@
                     placeholder="বাসা/হোল্ডিং নং, রোড, এলাকা, থানা ও জেলার নাম লিখুন"
                     class="w-full px-4 py-3 rounded-xl border border-honey-300 bg-honey-50/40 text-espresso placeholder-espresso-muted/60 focus:outline-none focus:ring-2 focus:ring-honey-500 focus:border-honey-500 transition-all"
                   ></textarea>
-                  <p id="addressError" class="hidden text-xs font-medium text-red-600 mt-1">অনুগ্রহ করে আপনার পূর্ণ ডেলিভারি ঠিকানা লিখুন।</p>
+                  <p id="addressError" class="hidden text-xs font-medium text-red-600 mt-1">অনুগ্রহ করে জেলা ও থানা সহ আপনার পূর্ণ ঠিকানা লিখুন।</p>
                 </div>
               </div>
             </div>
 
-            <!-- ডান কলাম (৫ কলাম): লাইভ অর্ডার সামারি কার্ড -->
+            <!-- ডান কলাম (৫ কলাম): লাইভ বিল ক্যালকুলেটর সামারি বক্স -->
             <div class="lg:col-span-5 flex flex-col justify-between bg-honey-50 rounded-2xl p-5 sm:p-6 border border-honey-200">
               <div>
                 <h3 class="font-heading font-bold text-xl text-espresso pb-3.5 border-b border-honey-200 flex items-center justify-between">
@@ -1011,27 +917,27 @@
                   <span class="text-xs font-semibold bg-honey-200/80 text-espresso px-2.5 py-1 rounded-lg">ক্যাশ অন ডেলিভারি</span>
                 </h3>
 
-                <!-- সিলেক্টেড আইটেম -->
+                <!-- সিলেক্টেড আইটেম ও পরিমাণ -->
                 <div class="py-4 border-b border-honey-200/80 flex items-start justify-between gap-3">
                   <div>
                     <p class="font-heading font-bold text-base text-espresso">সুন্দরবনের ১০০% খাঁটি চাকের মধু</p>
-                    <p id="summaryPackageText" class="text-sm text-espresso-muted mt-0.5">প্যাকেজ: ১ কেজি (জনপ্রিয় প্যাক)</p>
+                    <p id="summaryPackageText" class="text-sm text-espresso-muted mt-0.5">প্যাকেজ: ১ কেজি জার × ১টি</p>
                     <p id="summaryGiftText" class="hidden text-xs font-semibold text-honey-800 bg-honey-200/70 inline-block px-2 py-0.5 rounded mt-1.5">
-                      🎁 সাথে ১টি কাঠের হানি ডিপার ফ্রি!
+                      🎁 সাথে ফ্রি কাঠের হানি ডিপার!
                     </p>
                   </div>
                   <span id="summarySubtotal" class="font-heading font-bold text-lg text-espresso shrink-0">৳১,২০০</span>
                 </div>
 
-                <!-- সাবটোটাল ও ডেলিভারি চার্জ -->
+                <!-- পণ্যের মূল্য ও ডেলিভারি চার্জ -->
                 <div class="py-4 space-y-2.5 text-sm sm:text-base border-b border-honey-200/80">
                   <div class="flex items-center justify-between text-espresso-light">
-                    <span>সাবটোটাল (প্রোডাক্ট মূল্য)</span>
+                    <span>পণ্যের মূল্য</span>
                     <span id="summarySubtotalRow" class="font-semibold text-espresso">৳১,২০০</span>
                   </div>
                   <div class="flex items-center justify-between text-espresso-light">
                     <span id="summaryDeliveryLabel">ডেলিভারি চার্জ (ঢাকার ভেতরে)</span>
-                    <span id="summaryDeliveryCharge" class="font-bold text-trust">৳০ (ফ্রি)</span>
+                    <span id="summaryDeliveryCharge" class="font-bold text-trust">৳০ (ফ্রি ডেলিভারি!)</span>
                   </div>
                 </div>
 
@@ -1045,20 +951,19 @@
                 </div>
               </div>
 
-              <!-- সাবমিট বাটন ও নিরাপত্তা নোট -->
+              <!-- সাবমিট বাটন -->
               <div class="space-y-3 pt-2">
                 <button
                   type="submit"
-                  class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-trust to-emerald-600 hover:from-trust-dark hover:to-trust text-white font-heading font-bold text-lg shadow-lg shadow-trust/25 hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2"
+                  class="w-full py-4 px-5 rounded-2xl bg-gradient-to-r from-trust to-emerald-600 hover:from-trust-dark hover:to-trust text-white font-heading font-bold text-base sm:text-lg shadow-lg shadow-trust/25 hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2"
                 >
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>অর্ডার কনফার্ম করুন (Cash on Delivery)</span>
+                  <span>অর্ডার কনফার্ম করুন - ক্যাশ অন ডেলিভারি</span>
                 </button>
-                <p class="text-center text-xs text-espresso-muted flex items-center justify-center gap-1.5">
-                  <svg class="w-4 h-4 text-trust shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
-                  আপনার তথ্য ১০০% নিরাপদ থাকবে। অর্ডার করার পর আমাদের প্রতিনিধি কল করে কনফার্ম করবেন।
+                <p class="text-center text-xs text-espresso-muted">
+                  অর্ডার করার পর আমাদের প্রতিনিধি কল করে আপনার অর্ডারটি কনফার্ম করবেন।
                 </p>
               </div>
             </div>
@@ -1069,7 +974,7 @@
     </section>
   </main>
 
-  <!-- ==================== ১০. ফুটার (Clean Footer) ==================== -->
+  <!-- ==================== ৯. ফুটার (Footer) ==================== -->
   <footer class="bg-espresso text-honey-100 py-12 border-t border-honey-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-honey-800/80">
@@ -1078,7 +983,7 @@
           <div class="flex items-center gap-2.5">
             <div class="w-9 h-9 rounded-xl bg-honey-500 flex items-center justify-center text-white">
               <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L16.5 4.6V9.8L12 12.4L7.5 9.8V4.6L12 2ZM17.5 10.6L22 13.2V18.4L17.5 21L13 18.4V13.2L17.5 10.6ZM6.5 10.6L11 13.2V18.4L6.5 21L2 18.4V13.2L6.5 10.6Z" />
+                <path d="M12 2.25C12 2.25 5.25 9.65 5.25 14.5C5.25 18.23 8.27 21.25 12 21.25C15.73 21.25 18.75 18.23 18.75 14.5C18.75 9.65 12 2.25 12 2.25Z" />
               </svg>
             </div>
             <span class="font-heading font-bold text-xl text-white">মধুবন অর্গানিকস</span>
@@ -1090,28 +995,21 @@
 
         <!-- হেল্পলাইন ও যোগাযোগ -->
         <div class="space-y-2.5">
-          <h4 class="font-heading font-bold text-lg text-white">যোগাযোগ ও হেল্পলাইন</h4>
+          <h4 class="font-heading font-bold text-lg text-white">হেল্পলাইন ও যোগাযোগ</h4>
           <p class="text-sm text-honey-200/90 flex items-center gap-2">
-            <span>📞 হেল্পলাইন:</span>
+            <span>📞 হেল্পলাইন নম্বর:</span>
             <a href="tel:01700000000" class="font-heading font-bold text-honey-400 hover:underline text-base">০১৭০০-০০০০০০</a>
           </p>
-          <p class="text-sm text-honey-200/90 flex items-center gap-2">
-            <span>🌐 ফেসবুক পেজ:</span>
-            <!-- আপনার ফেসবুক পেজের লিংক এখানে বসান -->
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-honey-400 hover:underline">
-              facebook.com/modhubonorganics
-            </a>
-          </p>
-          <p class="text-xs text-honey-200/70">সকাল ৯টা থেকে রাত ১০টা পর্যন্ত কাস্টমার কেয়ার খোলা থাকে।</p>
+          <p class="text-xs text-honey-200/75">সকাল ৯টা থেকে রাত ১০টা পর্যন্ত কাস্টমার সাপোর্ট খোলা থাকে।</p>
         </div>
 
-        <!-- ক্যাশ অন ডেলিভারি ট্রাস্ট নোট -->
+        <!-- ক্যাশ অন ডেলিভারি ব্যাজ -->
         <div class="bg-espresso-light/80 rounded-2xl p-4 border border-honey-700/50 space-y-2">
-          <h4 class="font-heading font-bold text-base text-honey-300 flex items-center gap-2">
-            <span>🚚 সারা দেশে ক্যাশ অন ডেলিভারি</span>
-          </h4>
-          <p class="text-xs sm:text-sm text-honey-100/80 leading-relaxed">
-            কোনো অগ্রিম পেমেন্ট ছাড়াই অর্ডার করুন। পার্সেল হাতে পেয়ে ডেলিভারি ম্যানের সামনে যাচাই করে মূল্য পরিশোধের সুবিধা।
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-trust text-white text-xs font-bold">
+            <span>✓ ১০০% ক্যাশ অন ডেলিভারি সুবিধা</span>
+          </div>
+          <p class="text-xs sm:text-sm text-honey-100/85 leading-relaxed">
+            কোনো অগ্রিম টাকা ছাড়াই অর্ডার করুন। পার্সেল হাতে পেয়ে ডেলিভারি ম্যানের সামনে যাচাই করে মূল্য পরিশোধ করুন।
           </p>
         </div>
       </div>
@@ -1123,9 +1021,9 @@
     </div>
   </footer>
 
-  <!-- ==================== অর্ডার কনফার্মেশন পপ-আপ মোডাল (Celebratory Modal) ==================== -->
+  <!-- ==================== অর্ডার কনফার্মেশন পপ-আপ মোডাল ==================== -->
   <div id="orderModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-espresso/75 backdrop-blur-sm">
-    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border-2 border-honey-300 text-center relative animate-[fadeIn_0.25s_ease-out]">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border-2 border-honey-300 text-center relative">
       <!-- সাফল্য আইকন -->
       <div class="w-16 h-16 rounded-full bg-trust-light text-trust mx-auto flex items-center justify-center mb-4 shadow-inner">
         <svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -1134,7 +1032,7 @@
       </div>
 
       <span class="inline-block px-3 py-1 rounded-full bg-honey-100 text-honey-800 text-xs font-bold mb-2">
-        অর্ডার আইডি: <span id="modalOrderId">#MB-1024</span>
+        অর্ডার আইডি: <span id="modalOrderId">#MB-১০২৪</span>
       </span>
 
       <h3 class="font-heading font-bold text-2xl sm:text-3xl text-espresso mb-2">
@@ -1146,17 +1044,21 @@
 
       <!-- অর্ডার সামারি বক্স -->
       <div class="bg-honey-50 rounded-2xl p-4 border border-honey-200 text-left text-sm space-y-2 mb-6">
-        <div class="flex justify-between">
-          <span class="text-espresso-muted">প্যাকেজ:</span>
-          <span id="modalPackage" class="font-bold text-espresso">১ কেজি (জনপ্রিয় প্যাক)</span>
+        <div class="flex justify-between gap-2">
+          <span class="text-espresso-muted shrink-0">প্যাকেজ ও পরিমাণ:</span>
+          <span id="modalPackage" class="font-bold text-espresso text-right">১ কেজি জার × ১টি</span>
         </div>
-        <div class="flex justify-between">
-          <span class="text-espresso-muted">ডেলিভারি এলাকা:</span>
-          <span id="modalLocation" class="font-semibold text-espresso">ঢাকার ভেতরে</span>
+        <div class="flex justify-between gap-2">
+          <span class="text-espresso-muted shrink-0">ডেলিভারি এলাকা:</span>
+          <span id="modalLocation" class="font-semibold text-espresso text-right">ঢাকার ভেতরে</span>
         </div>
-        <div class="flex justify-between">
-          <span class="text-espresso-muted">মোবাইল নম্বর:</span>
-          <span id="modalPhone" class="font-semibold text-espresso">০১৭০০০০০০০০</span>
+        <div class="flex justify-between gap-2">
+          <span class="text-espresso-muted shrink-0">ডেলিভারি ঠিকানা:</span>
+          <span id="modalAddress" class="font-semibold text-espresso text-right">ঢাকা</span>
+        </div>
+        <div class="flex justify-between gap-2">
+          <span class="text-espresso-muted shrink-0">মোবাইল নম্বর:</span>
+          <span id="modalPhone" class="font-semibold text-espresso text-right">০১৭০০০০০০০০</span>
         </div>
         <div class="flex justify-between pt-2 border-t border-honey-200">
           <span class="font-heading font-bold text-base text-espresso">সর্বমোট বিল (COD):</span>
@@ -1174,13 +1076,18 @@
     </div>
   </div>
 
-  <!-- ==================== জাভাস্ক্রিপ্ট লজিক (Interactive Pricing, FAQ & Validation) ==================== -->
+  <!-- ==================== জাভাস্ক্রিপ্ট লজিক (Live Bill Calculator, FAQ & Validation) ==================== -->
   <script>
-    // ইংরেজি সংখ্যাকে বাংলা সংখ্যায় রূপান্তরের ফাংশন (যেমন: 1200 -> ১,২০০)
-    function toBengaliCurrency(amount) {
+    // ইংরেজি সংখ্যাকে বাংলা সংখ্যায় রূপান্তরের ফাংশন
+    function toBengaliNumber(num) {
       const bengaliDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+      return String(num).replace(/\d/g, (digit) => bengaliDigits[digit]);
+    }
+
+    // ইংরেজি মূল্যকে বাংলা টাকার ফরম্যাটে রূপান্তরের ফাংশন (যেমন: 1200 -> ৳১,২০০)
+    function toBengaliCurrency(amount) {
       const formatted = Number(amount).toLocaleString('en-IN');
-      return '৳' + formatted.replace(/\d/g, (digit) => bengaliDigits[digit]);
+      return '৳' + toBengaliNumber(formatted);
     }
 
     // বাংলা সংখ্যাকে ইংরেজি সংখ্যায় রূপান্তরের ফাংশন (মোবাইল নম্বর ভ্যালিডেশনের জন্য)
@@ -1192,21 +1099,21 @@
     // প্যাকেজ ডেটা কনফিগারেশন
     const PACKAGES = {
       '500g': {
-        name: '৫০০ গ্রাম (স্টার্টার প্যাক)',
+        name: '৫০০ গ্রাম জার',
         price: 650,
-        freeDelivery: false,
+        alwaysFreeDelivery: false,
         hasGift: false
       },
       '1kg': {
-        name: '১ কেজি (জনপ্রিয় প্যাক)',
+        name: '১ কেজি জার',
         price: 1200,
-        freeDelivery: true,
+        alwaysFreeDelivery: true,
         hasGift: false
       },
       '2kg': {
-        name: '২ কেজি (ফ্যামিলি প্যাক)',
+        name: '২ কেজি জার',
         price: 2250,
-        freeDelivery: true,
+        alwaysFreeDelivery: true,
         hasGift: true
       }
     };
@@ -1218,6 +1125,7 @@
 
     // স্টেট ভেরিয়েবল
     let selectedPackageKey = '1kg';
+    let selectedQuantity = 1;
     let selectedLocationKey = 'inside';
 
     // অর্ডার সামারি ও UI আপডেট করার ফাংশন
@@ -1225,9 +1133,14 @@
       const pkg = PACKAGES[selectedPackageKey];
       const loc = DELIVERY_RATES[selectedLocationKey];
 
-      // ডেলিভারি চার্জ হিসাব (১ কেজি বা ২ কেজিতে ফ্রি ডেলিভারি)
-      const deliveryCost = pkg.freeDelivery ? 0 : loc.cost;
-      const grandTotal = pkg.price + deliveryCost;
+      const subtotal = pkg.price * selectedQuantity;
+      // ১ কেজি বা ২ কেজি প্যাকেজ সিলেক্ট করলে অথবা সাবটোটাল >= ১২০০ হলে ফ্রি ডেলিভারি
+      const isFreeDelivery = pkg.alwaysFreeDelivery || subtotal >= 1200;
+      const deliveryCost = isFreeDelivery ? 0 : loc.cost;
+      const grandTotal = subtotal + deliveryCost;
+
+      // পরিমাণ (Quantity) আপডেট
+      document.getElementById('qtyDisplay').textContent = toBengaliNumber(selectedQuantity);
 
       // প্যাকেজ রেডিও কার্ড স্টাইল আপডেট
       document.querySelectorAll('.package-radio-card').forEach((card) => {
@@ -1254,12 +1167,12 @@
       const insideChargeLabel = document.getElementById('insideChargeLabel');
       const outsideChargeLabel = document.getElementById('outsideChargeLabel');
 
-      if (pkg.freeDelivery) {
+      if (isFreeDelivery) {
         freeBadge.classList.remove('hidden');
-        insideChargeLabel.textContent = '৳০ (ফ্রি)';
-        insideChargeLabel.className = 'font-heading font-bold text-base text-trust-dark';
-        outsideChargeLabel.textContent = '৳০ (ফ্রি)';
-        outsideChargeLabel.className = 'font-heading font-bold text-base text-trust-dark';
+        insideChargeLabel.textContent = '৳০ (ফ্রি ডেলিভারি!)';
+        insideChargeLabel.className = 'font-heading font-bold text-sm sm:text-base text-trust-dark';
+        outsideChargeLabel.textContent = '৳০ (ফ্রি ডেলিভারি!)';
+        outsideChargeLabel.className = 'font-heading font-bold text-sm sm:text-base text-trust-dark';
       } else {
         freeBadge.classList.add('hidden');
         insideChargeLabel.textContent = '৳৬০';
@@ -1283,7 +1196,7 @@
       });
 
       // সামারি কার্ডের টেক্সট ও মূল্য আপডেট
-      document.getElementById('summaryPackageText').textContent = 'প্যাকেজ: ' + pkg.name;
+      document.getElementById('summaryPackageText').textContent = `প্যাকেজ: ${pkg.name} × ${toBengaliNumber(selectedQuantity)}টি`;
       const giftEl = document.getElementById('summaryGiftText');
       if (pkg.hasGift) {
         giftEl.classList.remove('hidden');
@@ -1291,13 +1204,13 @@
         giftEl.classList.add('hidden');
       }
 
-      document.getElementById('summarySubtotal').textContent = toBengaliCurrency(pkg.price);
-      document.getElementById('summarySubtotalRow').textContent = toBengaliCurrency(pkg.price);
+      document.getElementById('summarySubtotal').textContent = toBengaliCurrency(subtotal);
+      document.getElementById('summarySubtotalRow').textContent = toBengaliCurrency(subtotal);
       document.getElementById('summaryDeliveryLabel').textContent = `ডেলিভারি চার্জ (${loc.label})`;
 
       const deliveryChargeEl = document.getElementById('summaryDeliveryCharge');
       if (deliveryCost === 0) {
-        deliveryChargeEl.textContent = '৳০ (ফ্রি)';
+        deliveryChargeEl.textContent = '৳০ (ফ্রি ডেলিভারি!)';
         deliveryChargeEl.className = 'font-bold text-trust';
       } else {
         deliveryChargeEl.textContent = toBengaliCurrency(deliveryCost);
@@ -1310,14 +1223,30 @@
     // প্যাকেজ সেকশন থেকে বাটনে ক্লিক করলে সিলেক্ট করে অর্ডার ফর্মে স্ক্রল করবে
     function selectPackageAndScroll(pkgKey) {
       selectedPackageKey = pkgKey;
+      selectedQuantity = 1;
       updateOrderUI();
-      const orderSection = document.getElementById('order');
+      const orderSection = document.getElementById('order-section');
       if (orderSection) {
         orderSection.scrollIntoView({ behavior: 'smooth' });
       }
     }
 
-    // রেডিও কার্ড ক্লিক ইভেন্ট লিসেনার
+    // পরিমাণ বাড়ানো ও কমানোর বাটন ইভেন্ট
+    document.getElementById('qtyMinusBtn').addEventListener('click', () => {
+      if (selectedQuantity > 1) {
+        selectedQuantity -= 1;
+        updateOrderUI();
+      }
+    });
+
+    document.getElementById('qtyPlusBtn').addEventListener('click', () => {
+      if (selectedQuantity < 20) {
+        selectedQuantity += 1;
+        updateOrderUI();
+      }
+    });
+
+    // প্যাকেজ ও লোকেশন কার্ড ক্লিক ইভেন্ট লিসেনার
     document.querySelectorAll('.package-radio-card').forEach((card) => {
       card.addEventListener('click', () => {
         selectedPackageKey = card.dataset.pkg;
@@ -1359,7 +1288,6 @@
         const icon = button.querySelector('.faq-icon');
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-        // অন্য সব খোলা অ্যাকর্ডিয়ন বন্ধ করা (ক্লিন অভিজ্ঞতার জন্য)
         document.querySelectorAll('.faq-toggle').forEach((otherBtn) => {
           if (otherBtn !== button) {
             otherBtn.setAttribute('aria-expanded', 'false');
@@ -1403,7 +1331,7 @@
         nameInput.classList.remove('border-red-500');
       }
 
-      // মোবাইল নম্বর যাচাই (বাংলাদেশি ১১ ডিজিট: 013-019)
+      // মোবাইল নম্বর যাচাই (বাংলাদেশি ১১ ডিজিট)
       const normalizedPhone = normalizeDigits(phoneInput.value.trim()).replace(/[\s-]/g, '');
       const bdPhoneRegex = /^(?:\+?88)?01[3-9]\d{8}$/;
       if (!bdPhoneRegex.test(normalizedPhone)) {
@@ -1430,34 +1358,35 @@
         return;
       }
 
-      // অর্ডার আইডি ও সামারি তৈরি
+      // অর্ডার সামারি হিসাব
       const pkg = PACKAGES[selectedPackageKey];
       const loc = DELIVERY_RATES[selectedLocationKey];
-      const deliveryCost = pkg.freeDelivery ? 0 : loc.cost;
-      const grandTotal = pkg.price + deliveryCost;
+      const subtotal = pkg.price * selectedQuantity;
+      const isFreeDelivery = pkg.alwaysFreeDelivery || subtotal >= 1200;
+      const deliveryCost = isFreeDelivery ? 0 : loc.cost;
+      const grandTotal = subtotal + deliveryCost;
 
       const randomNum = Math.floor(1000 + Math.random() * 9000);
-      const bengaliDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-      const orderIdBn = '#MB-' + String(randomNum).replace(/\d/g, (d) => bengaliDigits[d]);
+      const orderIdBn = '#MB-' + toBengaliNumber(randomNum);
 
       document.getElementById('modalOrderId').textContent = orderIdBn;
       document.getElementById('modalCustomerName').textContent = nameVal;
-      document.getElementById('modalPackage').textContent = pkg.name;
+      document.getElementById('modalPackage').textContent = `${pkg.name} × ${toBengaliNumber(selectedQuantity)}টি`;
       document.getElementById('modalLocation').textContent = loc.label;
+      document.getElementById('modalAddress').textContent = addressVal;
       document.getElementById('modalPhone').textContent = phoneInput.value.trim();
       document.getElementById('modalTotal').textContent = toBengaliCurrency(grandTotal);
 
-      // মোডাল প্রদর্শন
       orderModal.classList.remove('hidden');
       orderModal.classList.add('flex');
     });
 
-    // মোডাল বন্ধ করা ও ফর্ম রিসেট
     function closeOrderModal() {
       orderModal.classList.add('hidden');
       orderModal.classList.remove('flex');
       orderForm.reset();
       selectedPackageKey = '1kg';
+      selectedQuantity = 1;
       selectedLocationKey = 'inside';
       updateOrderUI();
     }
@@ -1469,7 +1398,6 @@
       }
     });
 
-    // পেজ লোড হওয়ার পর ইনিশিয়াল UI সেটআপ
     document.addEventListener('DOMContentLoaded', () => {
       updateOrderUI();
     });
